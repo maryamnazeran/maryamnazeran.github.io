@@ -32,7 +32,7 @@ $(document).ready(function () {
 
 	//************ smooth scroll js
 
-	$('a.smooth-menu,a.custom-btn,a.banner-btn,a.dadada').on("click", function (e) {
+	$('a.smooth-menu,a.custom-btn,a.dadada').on("click", function (e) {
 		e.preventDefault();
 		var anchor = $(this);
 		$('html, body').stop().animate({

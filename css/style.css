@@ -1107,12 +1107,13 @@ ul.port-nav-list li a.active {
 .social-icons {
     margin-top: 10px;
 }
+.social-icons a {
+    text-decoration: none;
+}
 
 .social-icons .icon {
     font-size: 24px;
-    background: transparent;
-    padding-right: 30px;
-    display: inline-block;
+    padding-right: 20px;
     color: #fff;
 }
 

@@ -78,9 +78,9 @@
 
         $(document).ready(function() {
             // The default language is English
-            var lang = "en-gb";
+            var lang = lang_en;
             $(".lang").each(function(index, element) {
-              $(this).text(arrLang[lang][$(this).attr("key")]);
+              $(this).text(lang[$(this).attr("key")]);
             });
           });
   
@@ -96,7 +96,7 @@
             }
   
             $(".lang").each(function(index, element) {
-              $(this).text(arrLang[lang][$(this).attr("key")]);
+              $(this).text(lang[$(this).attr("key")]);
             });
           });
   

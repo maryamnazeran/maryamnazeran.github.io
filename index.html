@@ -3,7 +3,7 @@
 
 <head>
     <title>Maryam Nazeran</title>
-    
+
     <!--meta tags-->
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -11,7 +11,7 @@
     <meta name="keywords" content="ui, ux ,designer, developer, resume, cv, personal, portfolio, graphic, modern">
     <meta name="author" content="Maryam Nazeran">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
     <meta property="og:title" content="Maryam Nazeran">
     <meta property="og:url" content="https://maryamnazeran.ir">
     <meta property="og:type" content="website">
@@ -67,40 +67,6 @@
 
     <!--Responsive css-->
     <link rel="stylesheet" href="css/responsive.css">
-
-    <!--Latest version JQuery-->
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-
-    <!-- load language files -->
-    <script src="js/languages/lang.en.js"></script>
-    <script src="js/languages/lang.fa.js"></script>
-    <script>
-
-        $(document).ready(function() {
-            // The default language is English
-            var lang = lang_en;
-            $(".lang").each(function(index, element) {
-              $(this).text(lang[$(this).attr("key")]);
-            });
-          });
-  
-          // get/set the selected language
-          $(".translate").click(function() {
-            if ($(this).attr("id") == "en")
-            {
-                var lang = lang_en;    
-            }
-            else
-            {
-                var lang = lang_fa;
-            }
-  
-            $(".lang").each(function(index, element) {
-              $(this).text(lang[$(this).attr("key")]);
-            });
-          });
-  
-    </script>
 </head>
 
 <body>
@@ -157,17 +123,17 @@
                             <div class="col-md-12">
                                 <section class="intro animate-scale">
 
-                                    <h3 class="lang">Hi! I am Maryam</h3>
+                                    <h3 class="lang" key="greeting">Hi! I am Maryam</h3>
                                     <button class="translate" id="en">English</button>
                                     <button class="translate" id="fa">فارسی</button>
 
                                     <h1 class="ah-headline">
                                         <span class="ah-words-wrapper">
-                                            <b class="is-visible lang">Graphic Designer</b>
+                                            <b class="is-visible lang" key="Graphic_Designer">Graphic Designer</b>
                                             <!--edit the designation if you are in different profession-->
-                                            <b class="lang">UI / UX Designer</b>
+                                            <b class="lang" key="UI_UX_Designer">UI / UX Designer</b>
                                             <!--edit the designation if you are in different profession-->
-                                            <b class="lang">IT Engineer</b>
+                                            <b class="lang" key="IT_Engineer">IT Engineer</b>
                                             <!--edit the designation if you are in different profession-->
                                         </span>
                                     </h1>
@@ -193,7 +159,8 @@
                                         </a>
                                     </div>
 
-                                    <a href="https://resume.io/r/wlbQi2f6H" class="btn-sm banner-btn lang" target="_blank">My CV</a>
+                                    <a href="https://resume.io/r/wlbQi2f6H" class="btn-sm banner-btn lang"
+                                        target="_blank" key="My_CV">My CV</a>
                                 </section>
 
                                 <div class="clearfix"></div>
@@ -225,12 +192,12 @@
                 </div>
                 <div class="col-md-8 col-sm-12">
                     <div class="about-right">
-                        <h2 class="lang">My Little Story</h2>
-                        <p class="lang">
+                        <h2 class="lang" key="about_title">My Little Story</h2>
+                        <p class="lang" key="about_text">
                             I am Maryam Nazeran, Master of Graphic Design, creative and enthusiastic person. I always
                             like to create something on my own which is helpful for others.
                         </p>
-                        <p class="lang">
+                        <p class="lang" key="about_text_2">
                             I am working at Barman international transport company in the Mashhad, Iran and i have been
                             building noteworthy UX/UI designs and websites for years, which comply with the latest
                             design trends. I help convert a vision and an idea into meaningful and useful products.
@@ -243,7 +210,7 @@
                                     <div class="col-md-12">
                                         <!-- skillbar -->
                                         <div class="skillbar" data-percent="95%"> <!--edit percentage-->
-                                            <h6 class="skillbar-title lang">Designing</h6> <!--edit skills-->
+                                            <h6 class="skillbar-title lang" key="Designing">Designing</h6> <!--edit skills-->
                                             <h6 class="skillbar-percent">95%</h6> <!--edit percentage-->
                                             <div class="skillbar-bar">
                                                 <div class="skillbar-child"></div>
@@ -255,7 +222,7 @@
                                     <div class="col-md-12">
                                         <!-- skillbar -->
                                         <div class="skillbar" data-percent="90%"> <!--edit percentage-->
-                                            <h6 class="skillbar-title lang">Painting</h6> <!--edit skills-->
+                                            <h6 class="skillbar-title lang" key="Painting">Painting</h6> <!--edit skills-->
                                             <h6 class="skillbar-percent">90%</h6> <!--edit percentage-->
                                             <div class="skillbar-bar">
                                                 <div class="skillbar-child"></div>
@@ -267,7 +234,7 @@
                                     <div class="col-md-12">
                                         <!-- skillbar -->
                                         <div class="skillbar" data-percent="85%"> <!--edit percentage-->
-                                            <h6 class="skillbar-title lang">Photography</h6> <!--edit skills-->
+                                            <h6 class="skillbar-title lang" key="Photography">Photography</h6> <!--edit skills-->
                                             <h6 class="skillbar-percent">85%</h6> <!--edit percentage-->
                                             <div class="skillbar-bar">
                                                 <div class="skillbar-child"></div>
@@ -279,7 +246,7 @@
                                     <div class="col-md-12">
                                         <!-- skillbar -->
                                         <div class="skillbar" data-percent="75%"> <!--edit percentage-->
-                                            <h6 class="skillbar-title lang">Development</h6> <!--edit skills-->
+                                            <h6 class="skillbar-title lang" key="Development">Development</h6> <!--edit skills-->
                                             <h6 class="skillbar-percent">75%</h6> <!--edit percentage-->
                                             <div class="skillbar-bar">
                                                 <div class="skillbar-child"></div>
@@ -305,7 +272,7 @@
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
                     <div class="single-quotation">
-                        <h2 class="lang">"Dream Big, stay positive, work hard, and enjoy the journey"</h2>
+                        <h2 class="lang" key="quotation">"Dream Big, stay positive, work hard, and enjoy the journey"</h2>
                         <!-- <h2>Be patient. Great things take time and empires aren't built in a day.</h2> -->
                         <!-- <p>Someone Famous</p> -->
                     </div>
@@ -322,7 +289,7 @@
         <div class="container">
             <div class="row">
                 <div class="section-title">
-                    <h2 class="lang">Portfolio</h2>
+                    <h2 class="lang" key="Portfolio">Portfolio</h2>
                 </div>
             </div>
         </div>
@@ -332,12 +299,12 @@
                     <div class="row">
                         <div class="col-xs-12">
                             <ul class="port-nav-list">
-                                <li><a class="img-filter active" data-filter="*">All</a></li>
-                                <li><a class="img-filter" data-filter=".web">Web Design</a></li>
-                                <li><a class="img-filter" data-filter=".ui">UI Design</a></li>
-                                <li><a class="img-filter" data-filter=".logo-design">Logo</a></li>
-                                <li><a class="img-filter" data-filter=".paint">Painting</a></li>
-                                <li><a class="img-filter" data-filter=".photo">Photography</a></li>
+                                <li><a class="img-filter active" data-filter="*" key="All">All</a></li>
+                                <li><a class="img-filter" data-filter=".web" key="Web_Design">Web Design</a></li>
+                                <li><a class="img-filter" data-filter=".ui" key="UI_Design">UI Design</a></li>
+                                <li><a class="img-filter" data-filter=".logo-design" key="Logo">Logo</a></li>
+                                <li><a class="img-filter" data-filter=".paint" key="Painting">Painting</a></li>
+                                <li><a class="img-filter" data-filter=".photo" key="Photography">Photography</a></li>
                             </ul>
                         </div>
                     </div>
@@ -353,7 +320,7 @@
                                 <div class="overlay">
                                     <div class="overlay-inner">
                                         <h4>Wake Up</h4>
-                                        <p>Mobile App Design</p>
+                                        <p key="Mobile_App_Design">Mobile App Design</p>
                                     </div>
                                 </div>
                             </a>
@@ -367,7 +334,7 @@
                                 <div class="overlay">
                                     <div class="overlay-inner">
                                         <h4>Bamboo - Online Flower Shop</h4>
-                                        <p>Brand, Design</p>
+                                        <p key="Brand_Design">Brand, Design</p>
                                     </div>
                                 </div>
                             </a>
@@ -381,7 +348,7 @@
                                 <div class="overlay">
                                     <div class="overlay-inner">
                                         <h4>Golestan Website</h4>
-                                        <p>UI / UX Design</p>
+                                        <p key="UI_UX_Design">UI / UX Design</p>
                                     </div>
                                 </div>
                             </a>
@@ -395,7 +362,7 @@
                                 <div class="overlay">
                                     <div class="overlay-inner">
                                         <h4>Adineh Laundry</h4>
-                                        <p>Brand, Design</p>
+                                        <p key="Brand_Design">Brand, Design</p>
                                     </div>
                                 </div>
                             </a>
@@ -409,7 +376,7 @@
                                 <div class="overlay">
                                     <div class="overlay-inner">
                                         <h4>Khadem Sanat</h4>
-                                        <p>UI / UX Design</p>
+                                        <p key="UI_UX_Design">UI / UX Design</p>
                                     </div>
                                 </div>
                             </a>
@@ -423,7 +390,7 @@
                                 <div class="overlay">
                                     <div class="overlay-inner">
                                         <h4>Helena Gallery</h4>
-                                        <p>Brand, Design</p>
+                                        <p key="Brand_Design">Brand, Design</p>
                                     </div>
                                 </div>
                             </a>
@@ -437,7 +404,7 @@
                                 <div class="overlay">
                                     <div class="overlay-inner">
                                         <h4>Airman</h4>
-                                        <p>UI / UX Design</p>
+                                        <p key="UI_UX_Design">UI / UX Design</p>
                                     </div>
                                 </div>
                             </a>
@@ -451,7 +418,7 @@
                                 <div class="overlay">
                                     <div class="overlay-inner">
                                         <h4>Naser Khosro</h4>
-                                        <p>Brand, Design</p>
+                                        <p key="Brand_Design">Brand, Design</p>
                                     </div>
                                 </div>
                             </a>
@@ -465,7 +432,7 @@
                                 <div class="overlay">
                                     <div class="overlay-inner">
                                         <h4>Eldo Kawa</h4>
-                                        <p>Painting</p>
+                                        <p key="Painting">Painting</p>
                                     </div>
                                 </div>
                             </a>
@@ -479,7 +446,7 @@
                                 <div class="overlay">
                                     <div class="overlay-inner">
                                         <h4>Khadem Sanat</h4>
-                                        <p>Brand, Design</p>
+                                        <p key="Brand_Design">Brand, Design</p>
                                     </div>
                                 </div>
                             </a>
@@ -493,7 +460,7 @@
                                 <div class="overlay">
                                     <div class="overlay-inner">
                                         <h4>The Girl</h4>
-                                        <p>Painting</p>
+                                        <p key="Painting">Painting</p>
                                     </div>
                                 </div>
                             </a>
@@ -507,7 +474,7 @@
                                 <div class="overlay">
                                     <div class="overlay-inner">
                                         <h4>Iran Sanat</h4>
-                                        <p>Brand, Design</p>
+                                        <p key="Brand_Design">Brand, Design</p>
                                     </div>
                                 </div>
                             </a>
@@ -521,7 +488,7 @@
                                 <div class="overlay">
                                     <div class="overlay-inner">
                                         <h4>Fresh Feeling</h4>
-                                        <p>Photography</p>
+                                        <p key="Photography">Photography</p>
                                     </div>
                                 </div>
                             </a>
@@ -535,21 +502,21 @@
                                 <div class="overlay">
                                     <div class="overlay-inner">
                                         <h4>SRL</h4>
-                                        <p>Brand, Design</p>
+                                        <p key="Brand_Design">Brand, Design</p>
                                     </div>
                                 </div>
                             </a>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6 col-xs-12 single-port ui web"
-                    style="position: absolute; left: 0px; top: 285px;">
+                        style="position: absolute; left: 0px; top: 285px;">
                         <div class="project-item">
                             <a href="images/port/srl_web.jpg" class="zoom1">
                                 <img src="images/port/srl_web_small.jpg" alt="portfolio image">
                                 <div class="overlay">
                                     <div class="overlay-inner">
                                         <h4>SRL</h4>
-                                        <p>UI / UX Design</p>
+                                        <p key="UI_UX_Design">UI / UX Design</p>
                                     </div>
                                 </div>
                             </a>
@@ -563,21 +530,21 @@
                                 <div class="overlay">
                                     <div class="overlay-inner">
                                         <h4>Khorasan Steel Complex</h4>
-                                        <p>Brand, Design</p>
+                                        <p key="Brand_Design">Brand, Design</p>
                                     </div>
                                 </div>
                             </a>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6 col-xs-12 single-port photo"
-                    style="position: absolute; left: 760px; top: 285px;">
+                        style="position: absolute; left: 760px; top: 285px;">
                         <div class="project-item">
                             <a href="images/port/khayyam.jpg" class="zoom1">
                                 <img src="images/port/khayyam_small.jpg" alt="portfolio image">
                                 <div class="overlay">
                                     <div class="overlay-inner">
                                         <h4>Khayyam</h4>
-                                        <p>Photography</p>
+                                        <p key="Photography">Photography</p>
                                     </div>
                                 </div>
                             </a>
@@ -591,7 +558,7 @@
                                 <div class="overlay">
                                     <div class="overlay-inner">
                                         <h4>Love Moon</h4>
-                                        <p>Painting</p>
+                                        <p key="Painting">Painting</p>
                                     </div>
                                 </div>
                             </a>
@@ -605,7 +572,7 @@
                                 <div class="overlay">
                                     <div class="overlay-inner">
                                         <h4>Sunset</h4>
-                                        <p>Photography</p>
+                                        <p key="Photography">Photography</p>
                                     </div>
                                 </div>
                             </a>
@@ -619,7 +586,7 @@
                                 <div class="overlay">
                                     <div class="overlay-inner">
                                         <h4>Royal Tree</h4>
-                                        <p>Painting</p>
+                                        <p key="Painting">Painting</p>
                                     </div>
                                 </div>
                             </a>
@@ -650,6 +617,9 @@
     </div>
 
     <!--Footer Area Ends-->
+
+    <!--Latest version JQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
     <!--Bootstrap js-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"
@@ -689,7 +659,35 @@
 
     <!--Main js-->
     <script src="js/main.js"></script>
-  
+
+    <!-- load language files -->
+    <script src="js/languages/lang.en.js"></script>
+    <script src="js/languages/lang.fa.js"></script>
+    <script>
+
+        $(document).ready(function () {
+            // The default language is English
+            var lang = lang_en;
+            $(".lang").each(function (index, element) {
+                $(this).text(lang[$(this).attr("key")]);
+            });
+
+            // get/set the selected language
+            $(".translate").click(function () {
+                if ($(this).attr("id") == "en") {
+                    var lang = lang_en;
+                }
+                else {
+                    var lang = lang_fa;
+                }
+
+                $(".lang").each(function (index, element) {
+                    $(this).text(lang[$(this).attr("key")]);
+                });
+            });
+        });
+ 
+    </script>
 </body>
 
 </html>

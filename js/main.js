@@ -143,6 +143,40 @@ $(document).ready(function () {
             }
         }
     });
+
+    // The default language is English
+    var lang = lang_en;
+    $(".lang").each(function (index, element) {
+        $(this).text(lang[$(this).attr("key")]);
+    });
+
+    // get/set the selected language
+    $(".translate").click(function () {
+        if ($(this).attr("id") == "en") {
+            var lang = lang_en;
+            $("html").css("direction", "ltr");
+            $("body").css("direction", "ltr");
+            $(".banner-bg").css("transform", "scaleX(1)");
+
+            $(this).attr("id", "fa");
+            $(this).text("Fa");
+        }
+        else {
+            var lang = lang_fa;
+            $("html").css("direction", "rtl");
+            $("body").css("direction", "rtl");
+            $(".banner-bg").css("transform", "scaleX(-1)");
+
+            $(this).attr("id", "en");
+            $(this).text("En");
+        }
+
+        $(".lang").each(function (index, element) {
+            $(this).text(lang[$(this).attr("key")]);
+            $(this).toggleClass("persian");
+        });
+    });
+
 });
 
 document.getElementById("year").innerHTML = new Date().getFullYear();

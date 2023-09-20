@@ -23,6 +23,11 @@
 
 /*--- 1. Default css starts ---*/
 
+@font-face {
+	font-family: "Ray Bold";
+	src: url(../fonts/Ray-Bold.ttf);
+}
+
 html,
 body {
     height: 100%;
@@ -36,6 +41,10 @@ body {
     line-height: 1.7;
     color: #333333;
     font-weight: 400;
+}
+
+.persian {
+	font-family: "Ray Bold" !important;
 }
 
 h1,
@@ -368,14 +377,10 @@ img {
 
 /*----------- 5. Banner area css starts--------------*/
 
-
 .banner-area {
-    background-image: url(../images/home/banner.jpg);
-    /*--edit image--*/
-    background-position: center;
-    background-size: cover;
-    position: relative;
+    width: 100%;
     height: 100%;
+    position: relative;
 }
 
 .banner-area::before {
@@ -386,6 +391,18 @@ img {
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
     content: '';
+}
+
+.banner-bg {
+    background-image: url(../images/home/banner.jpg);
+    /*--edit image--*/
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
 }
 
 canvas {

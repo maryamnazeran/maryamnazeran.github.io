@@ -81,7 +81,7 @@
                     <div class="main-menu">
                         <div class="navbar navbar-cus">
                             <div class="navbar-header">
-                                <a href="index.html" class="navbar-brand"><span class="logo">Maryam</span></a>
+                                <a href="index.html" class="navbar-brand"><span class="logo lang" key="name">Maryam</span></a>
                                 <!--change logo name-->
                                 <button type="button" class="navbar-toggle" data-toggle="collapse"
                                     data-target=".navbar-collapse">
@@ -91,13 +91,15 @@
                                     <span class="icon-bar"></span>
                                 </button>
                             </div>
+                            
+                            <button class="translate" id="fa">Fa</button>
 
                             <div class="navbar-collapse collapse">
                                 <nav>
                                     <ul class="nav navbar-nav navbar-right">
-                                        <li class="active"><a class="smooth-menu" href="#home">Home</a></li>
-                                        <li><a class="smooth-menu" href="#about">About</a></li>
-                                        <li><a class="smooth-menu" href="#portfolio">Portfolio</a></li>
+                                        <li class="active"><a class="smooth-menu lang" href="#home" key="home">Home</a></li>
+                                        <li><a class="smooth-menu lang" href="#about" key="about">About</a></li>
+                                        <li><a class="smooth-menu lang" href="#portfolio" key="Portfolio">Portfolio</a></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -115,6 +117,7 @@
     <!--Banner area starts-->
 
     <div class="banner-area" id="home">
+        <div class="banner-bg"></div>
         <div class="banner-table">
             <div class="banner-table-cell">
                 <div class="welcome-text">
@@ -124,8 +127,6 @@
                                 <section class="intro animate-scale">
 
                                     <h3 class="lang" key="greeting">Hi! I am Maryam</h3>
-                                    <button class="translate" id="en">English</button>
-                                    <button class="translate" id="fa">فارسی</button>
 
                                     <h1 class="ah-headline">
                                         <span class="ah-words-wrapper">
@@ -663,31 +664,7 @@
     <!-- load language files -->
     <script src="js/languages/lang.en.js"></script>
     <script src="js/languages/lang.fa.js"></script>
-    <script>
 
-        $(document).ready(function () {
-            // The default language is English
-            var lang = lang_en;
-            $(".lang").each(function (index, element) {
-                $(this).text(lang[$(this).attr("key")]);
-            });
-
-            // get/set the selected language
-            $(".translate").click(function () {
-                if ($(this).attr("id") == "en") {
-                    var lang = lang_en;
-                }
-                else {
-                    var lang = lang_fa;
-                }
-
-                $(".lang").each(function (index, element) {
-                    $(this).text(lang[$(this).attr("key")]);
-                });
-            });
-        });
- 
-    </script>
 </body>
 
 </html>

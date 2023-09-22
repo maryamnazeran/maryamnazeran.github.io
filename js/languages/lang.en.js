@@ -16,7 +16,7 @@ lang_en = {
     Painting: "Painting",
     Photography: "Photography",
     Development: "Development",
-    quotation: '"Dream Big, stay positive, work hard, and enjoy the journey"',
+    quotation: "Dream Big, stay positive, work hard, and enjoy the journey",
     All: "All",
     Web_Design: "Web Design",
     UI_Design: "UI Design",

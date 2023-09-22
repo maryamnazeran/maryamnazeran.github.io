@@ -120,7 +120,7 @@
             word.addClass('is-visible').removeClass('is-hidden');
 
         }  else if(word.parents('.ah-headline').hasClass('clip')) {
-            word.parents('.ah-words-wrapper').animate({ 'width' : word.width() + 10 }, settings.revealDuration, function(){ 
+            word.parents('.ah-words-wrapper').animate({ 'width' : word.width() + 0 }, settings.revealDuration, function(){ 
                 setTimeout(function(){
                     hideWord(word)
                 }, settings.revealAnimationDelay); 

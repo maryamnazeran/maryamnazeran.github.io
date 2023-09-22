@@ -157,6 +157,10 @@ $(document).ready(function () {
             $("html").css("direction", "ltr");
             $("body").css("direction", "ltr");
             $(".banner-bg").css("transform", "scaleX(1)");
+            $(".skillbar-percent").css("float", "right");
+            $(".ah-words-wrapper").removeClass("ah-words-wrapper-rtl");
+            $(".social-icons .icon").css("padding-right", "20px");
+            $(".social-icons .icon").css("padding-left", "0px");
 
             $(this).attr("id", "fa");
             $(this).text("Fa");
@@ -166,6 +170,10 @@ $(document).ready(function () {
             $("html").css("direction", "rtl");
             $("body").css("direction", "rtl");
             $(".banner-bg").css("transform", "scaleX(-1)");
+            $(".skillbar-percent").css("float", "left");
+            $(".ah-words-wrapper").addClass("ah-words-wrapper-rtl");
+            $(".social-icons .icon").css("padding-right", "0px");
+            $(".social-icons .icon").css("padding-left", "20px");
 
             $(this).attr("id", "en");
             $(this).text("En");

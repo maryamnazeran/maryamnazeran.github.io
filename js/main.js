@@ -163,7 +163,7 @@ $(document).ready(function () {
             $(".social-icons .icon").css("padding-left", "0px");
 
             $(this).attr("id", "fa");
-            $(this).text("Fa");
+            $(this).text("پارسی");
         }
         else {
             var lang = lang_fa;
@@ -176,7 +176,7 @@ $(document).ready(function () {
             $(".social-icons .icon").css("padding-left", "20px");
 
             $(this).attr("id", "en");
-            $(this).text("En");
+            $(this).text("English");
         }
 
         $(".lang").each(function (index, element) {

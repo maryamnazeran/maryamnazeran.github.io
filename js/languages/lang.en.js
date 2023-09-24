@@ -25,5 +25,8 @@ lang_en = {
     Brand_Design: "Brand Design",
     Design: "Design",
     UI_UX_Design: "UI / UX Design",
-
+    _95: "%95",
+    _90: "%90",
+    _85: "%85",
+    _75: "%75",
 };

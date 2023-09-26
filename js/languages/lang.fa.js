@@ -11,7 +11,7 @@ lang_fa = {
     about_title: "داستان کوچک من",
     // about_text: "I am a graphic designer and UI / UX designer. I have a bachelor's degree in IT engineering and I have been working in this field for 5 years. I have a lot of experience in designing and implementing websites and applications. I have been working in the field of graphic design for 10 years and I have a lot of experience in designing logos, posters, business cards, etc.",
     about_text: "من مریم ناظران هستم، کارشناس ارشد طراحی گرافیک، فرد خلاق و متعهد. همیشه دوست داشتم چیزی را به تنهایی بسازم که برای دیگران مفید باشد.",
-    about_text_2: "من در شرکت حمل و نقل بین المللی بارمان در مشهد، ایران کار می کنم و سالهاست که طراحی UX / UI وب سایت های قابل توجه و وب سایت هایی را که با آخرین روند طراحی سازگار هستند، انجام می دهم. من به تبدیل یک دیدگاه و یک ایده به محصولات معنی دار و مفید کمک می کنم. داشتن چشم تیز برای تکامل محصول به من کمک می کند تا وظایف را اولویت بندی کنم، سریع تر تکرار کنم و سریع تر تحویل دهم.",
+    about_text_2: "من در هلدینگ خادم لجستیک در مشهد، ایران کار می کنم و سالهاست که طراحی UX / UI وب سایت های قابل توجه و وب سایت هایی را که با آخرین روند طراحی سازگار هستند، انجام می دهم. من به تبدیل یک دیدگاه و یک ایده به محصولات معنی دار و مفید کمک می کنم. داشتن چشم تیز برای تکامل محصول به من کمک می کند تا وظایف را اولویت بندی کنم، سریع تر تکرار کنم و سریع تر تحویل دهم.",
     Designing: "طراحی",
     Painting: "نقاشی",
     Photography: "عکاسی",

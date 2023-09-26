@@ -11,7 +11,7 @@ lang_en = {
     about_title: "My Little Story",
     // about_text: "I am a graphic designer and UI / UX designer. I have a bachelor's degree in IT engineering and I have been working in this field for 5 years. I have a lot of experience in designing and implementing websites and applications. I have been working in the field of graphic design for 10 years and I have a lot of experience in designing logos, posters, business cards, etc.",
     about_text: "I am Maryam Nazeran, Master of Graphic Design, creative and enthusiastic person. I always like to create something on my own which is helpful for others.",
-    about_text_2: "I am working at Barman international transport company in the Mashhad, Iran and i have been building noteworthy UX/UI designs and websites for years, which comply with the latest design trends. I help convert a vision and an idea into meaningful and useful products. Having a sharp eye for product evolution helps me prioritize tasks, iterate fast and deliver faster.",
+    about_text_2: "I am working at Khadem Logistics Holding in the Mashhad, Iran and i have been building noteworthy UX/UI designs and websites for years, which comply with the latest design trends. I help convert a vision and an idea into meaningful and useful products. Having a sharp eye for product evolution helps me prioritize tasks, iterate fast and deliver faster.",
     Designing: "Designing",
     Painting: "Painting",
     Photography: "Photography",

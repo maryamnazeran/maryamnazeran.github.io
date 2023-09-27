@@ -144,47 +144,67 @@ $(document).ready(function () {
         }
     });
 
+    var lang;
     // The default language is English
-    var lang = lang_en;
-    $(".lang").each(function (index, element) {
-        $(this).text(lang[$(this).attr("key")]);
-    });
+    lang = lang_en;
+    english_language();
 
     // get/set the selected language
     $(".translate").click(function () {
         if ($(this).attr("id") == "en") {
-            var lang = lang_en;
-            $("html").css("direction", "ltr");
-            $("body").css("direction", "ltr");
-            $(".banner-bg").css("transform", "scaleX(1)");
-            $(".skillbar-percent").css("float", "right");
-            $(".ah-words-wrapper").removeClass("ah-words-wrapper-rtl");
-            $(".social-icons .icon").css("padding-right", "20px");
-            $(".social-icons .icon").css("padding-left", "0px");
-
-            $(this).attr("id", "fa");
-            $(this).text("پارسی");
+            english_language();
         }
         else {
-            var lang = lang_fa;
-            $("html").css("direction", "rtl");
-            $("body").css("direction", "rtl");
-            $(".banner-bg").css("transform", "scaleX(-1)");
-            $(".skillbar-percent").css("float", "left");
-            $(".ah-words-wrapper").addClass("ah-words-wrapper-rtl");
-            $(".social-icons .icon").css("padding-right", "0px");
-            $(".social-icons .icon").css("padding-left", "20px");
-
-            $(this).attr("id", "en");
-            $(this).text("English");
+            persian_language();
         }
+    });
+
+    function persian_language() {
+        lang = lang_fa;
+        $("html").css("direction", "rtl");
+        $("body").css("direction", "rtl");
+        $(".banner-bg").css("transform", "scaleX(-1)");
+        $(".skillbar-percent").css("float", "left");
+        $(".ah-words-wrapper").addClass("ah-words-wrapper-rtl");
+        $(".social-icons .icon").css("padding-right", "0px");
+        $(".social-icons .icon").css("padding-left", "20px");
+
+        $(".translate").attr("id", "en");
+        $(".translate").text("English");
 
         $(".lang").each(function (index, element) {
             $(this).text(lang[$(this).attr("key")]);
-            $(this).toggleClass("persian");
+            $(this).addClass("persian");
         });
-    });
+    }
 
+    function english_language() {
+        lang = lang_en;
+        $("html").css("direction", "ltr");
+        $("body").css("direction", "ltr");
+        $(".banner-bg").css("transform", "scaleX(1)");
+        $(".skillbar-percent").css("float", "right");
+        $(".ah-words-wrapper").removeClass("ah-words-wrapper-rtl");
+        $(".social-icons .icon").css("padding-right", "20px");
+        $(".social-icons .icon").css("padding-left", "0px");
+
+        $(".translate").attr("id", "fa");
+        $(".translate").text("پارسی");
+
+        $(".lang").each(function (index, element) {
+            $(this).text(lang[$(this).attr("key")]);
+            $(this).removeClass("persian");
+        });
+    }
 });
 
 document.getElementById("year").innerHTML = new Date().getFullYear();
+
+function hbd() {
+    party.confetti(document.body, {
+        count: party.variation.range(60, 80),
+    });
+}
+
+// infinte loop of confetti
+setInterval(hbd, 3000);

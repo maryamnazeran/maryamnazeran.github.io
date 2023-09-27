@@ -29,4 +29,6 @@ lang_en = {
     _90: "%90",
     _85: "%85",
     _75: "%75",
+    hbd: "Happy Birthday",
+    hbd_name: "❤ Maryam ❤"
 };

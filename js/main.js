@@ -207,4 +207,4 @@ function hbd() {
 }
 
 // infinte loop of confetti
-setInterval(hbd, 3000);
+// setInterval(hbd, 3000);

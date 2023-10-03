@@ -30,5 +30,8 @@ lang_en = {
     _85: "%85",
     _75: "%75",
     hbd: "Happy Birthday",
-    hbd_name: "❤ Maryam ❤"
+    hbd_name: "❤ Maryam ❤",
+    error: "Error",
+    _404: "404",
+    page_not_found: "Page Not Found",
 };

@@ -44,10 +44,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 
     <!--Bootstrap css-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
-        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous"> -->
+    <link id="bootstrap" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 
     <!--Animated headline css-->
     <link rel="stylesheet" href="css/jquery.animatedheadline.css">
@@ -73,32 +70,21 @@
     <!--navigation area starts-->
 
     <nav class="nav-area navbar navbar-expand-lg fixed-top">
-        <div class="container">
-            <div class="main-menu">
-                        <a href="index.html" class="navbar-brand">
-                            <span class="logo lang" key="name">Maryam</span>
-                        </a>
-                        <!--change logo name-->
-                        <button type="button" class="navbar-toggle" data-toggle="collapse"
-                            data-target=".navbar-collapse">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                    </div>
-
-                    <div class="navbar-collapse collapse d-flex">
-                        <ul class="navbar-nav navbar-right">
-                            <li class="active">
-                                <a class="lang" href="index.html" key="back_to_home">Back to Home</a>
-                            </li>
-                            <li><button class="translate" id="fa">پارسی</button></li>
-                        </ul>
-                
-                </div>
-       
-
+        <div class="container main-menu">
+            <a href="index.html" class="navbar-brand lang" key="name">
+                Maryam
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <div class="navbar-collapse collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 nav">
+                    <li class="nav-item">
+                        <a class="nav-link lang" href="index.html" key="back_to_home">Back to Home</a>
+                    </li>
+                    <li class="nav-item"><button class="btn btn-light translate" id="fa">پارسی</button></li>
+                </ul>
+            </div>
         </div>
     </nav>
 
@@ -173,8 +159,7 @@
             </div>
             <div class="container">
                 <div class="row port-items" id="img-filter" style="position: relative; height: 570px;">
-                    <div class="col-md-4 col-sm-6 col-xs-12 single-port publication"
-                        style="position: absolute; left: 760px; top: 0px;">
+                    <div class="col-md-4 col-sm-6 col-xs-12 single-port publication">
                         <div class="project-item">
                             <a href="images/port/hayaat_grand_hotel.jpg" class="zoom1">
                                 <img src="images/port/hayaat_grand_hotel_small.jpg" alt="portfolio image">
@@ -187,8 +172,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-6 col-xs-12 single-port ui web"
-                        style="position: absolute; left: 380px; top: 0px;">
+                    <div class="col-md-4 col-sm-6 col-xs-12 single-port ui web">
                         <div class="project-item">
                             <a href="images/port/khadem_logistics_holding.jpg" class="zoom1">
                                 <img src="images/port/khadem_logistics_holding_small.jpg" alt="portfolio image">
@@ -201,8 +185,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-6 col-xs-12 single-port ui web"
-                        style="position: absolute; left: 760px; top: 285px;">
+                    <div class="col-md-4 col-sm-6 col-xs-12 single-port ui web">
                         <div class="project-item">
                             <a href="images/port/mine_house.jpg" class="zoom1">
                                 <img src="images/port/mine_house_small.jpg" alt="portfolio image">
@@ -215,8 +198,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-6 col-xs-12 single-port social"
-                        style="position: absolute; left: 760px; top: 285px;">
+                    <div class="col-md-4 col-sm-6 col-xs-12 single-port social">
                         <div class="project-item">
                             <a href="images/port/tandis_salamat_instagram_post.jpg" class="zoom1">
                                 <img src="images/port/tandis_salamat_instagram_post_small.jpg" alt="portfolio image">
@@ -229,8 +211,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-6 col-xs-12 single-port ui"
-                        style="position: absolute; left: 760px; top: 0px;">
+                    <div class="col-md-4 col-sm-6 col-xs-12 single-port ui">
                         <div class="project-item">
                             <a href="images/port/wakeup.jpg" class="zoom1">
                                 <img src="images/port/wakeup_small.jpg" alt="portfolio image">
@@ -243,8 +224,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-6 col-xs-12 single-port logo-design"
-                        style="position: absolute; left: 380px; top: 0px;">
+                    <div class="col-md-4 col-sm-6 col-xs-12 single-port logo-design">
                         <div class="project-item">
                             <a href="images/port/bamboo.jpg" class="zoom1">
                                 <img src="images/port/bamboo_small.jpg" alt="portfolio image">
@@ -257,8 +237,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-6 col-xs-12 single-port branding ui web"
-                        style="position: absolute; left: 760px; top: 285px;">
+                    <div class="col-md-4 col-sm-6 col-xs-12 single-port branding ui web">
                         <div class="project-item">
                             <a href="images/port/golestan.jpg" class="zoom1">
                                 <img src="images/port/golestan_small.jpg" alt="portfolio image">
@@ -271,8 +250,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-6 col-xs-12 single-port logo-design"
-                        style="position: absolute; left: 0px; top: 0px;">
+                    <div class="col-md-4 col-sm-6 col-xs-12 single-port logo-design">
                         <div class="project-item">
                             <a href="images/port/adineh.jpg" class="zoom1">
                                 <img src="images/port/adineh_small.jpg" alt="portfolio image">
@@ -285,8 +263,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-6 col-xs-12 single-port ui web"
-                        style="position: absolute; left: 380px; top: 285px;">
+                    <div class="col-md-4 col-sm-6 col-xs-12 single-port ui web">
                         <div class="project-item">
                             <a href="images/port/khadem_sanat_landing.jpg" class="zoom1">
                                 <img src="images/port/khadem_sanat_landing_small.jpg" alt="portfolio image">
@@ -299,8 +276,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-6 col-xs-12 single-port logo-design"
-                        style="position: absolute; left: 760px; top: 0px;">
+                    <div class="col-md-4 col-sm-6 col-xs-12 single-port logo-design">
                         <div class="project-item">
                             <a href="images/port/helena.jpg" class="zoom1">
                                 <img src="images/port/helena_small.jpg" alt="portfolio image">
@@ -313,8 +289,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-6 col-xs-12 single-port ui web"
-                        style="position: absolute; left: 0px; top: 285px;">
+                    <div class="col-md-4 col-sm-6 col-xs-12 single-port ui web">
                         <div class="project-item">
                             <a href="images/port/airman.png" class="zoom1">
                                 <img src="images/port/airman_small.jpg" alt="portfolio image">
@@ -327,8 +302,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-6 col-xs-12 single-port logo-design"
-                        style="position: absolute; left: 760px; top: 285px;">
+                    <div class="col-md-4 col-sm-6 col-xs-12 single-port logo-design">
                         <div class="project-item">
                             <a href="images/port/khadem_rail_group.jpg" class="zoom1">
                                 <img src="images/port/khadem_rail_group_small.jpg" alt="portfolio image">
@@ -341,8 +315,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-6 col-xs-12 single-port paint"
-                        style="position: absolute; left: 760px; top: 285px;">
+                    <div class="col-md-4 col-sm-6 col-xs-12 single-port paint">
                         <div class="project-item">
                             <a href="images/port/edlo_kawa.jpg" class="zoom1">
                                 <img src="images/port/eldo_kawa_small.jpg" alt="portfolio image">
@@ -355,8 +328,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-6 col-xs-12 single-port logo-design"
-                        style="position: absolute; left: 760px; top: 285px;">
+                    <div class="col-md-4 col-sm-6 col-xs-12 single-port logo-design">
                         <div class="project-item">
                             <a href="images/port/khadem_sanat.jpg" class="zoom1">
                                 <img src="images/port/khadem_sanat_small.jpg" alt="portfolio image">
@@ -369,8 +341,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-6 col-xs-12 single-port paint"
-                        style="position: absolute; left: 760px; top: 285px;">
+                    <div class="col-md-4 col-sm-6 col-xs-12 single-port paint">
                         <div class="project-item">
                             <a href="images/port/girl.jpg" class="zoom1">
                                 <img src="images/port/girl_small.jpg" alt="portfolio image">
@@ -383,8 +354,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-6 col-xs-12 single-port logo-design"
-                        style="position: absolute; left: 760px; top: 285px;">
+                    <div class="col-md-4 col-sm-6 col-xs-12 single-port logo-design">
                         <div class="project-item">
                             <a href="images/port/iran_sanat.jpg" class="zoom1">
                                 <img src="images/port/iran_sanat_small.jpg" alt="portfolio image">
@@ -397,8 +367,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-6 col-xs-12 single-port paint"
-                        style="position: absolute; left: 760px; top: 285px;">
+                    <div class="col-md-4 col-sm-6 col-xs-12 single-port paint">
                         <div class="project-item">
                             <a href="images/port/girl_and_eiffel.jpg" class="zoom1">
                                 <img src="images/port/girl_and_eiffel_small.jpg" alt="portfolio image">
@@ -411,8 +380,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-6 col-xs-12 single-port photo"
-                        style="position: absolute; left: 760px; top: 285px;">
+                    <div class="col-md-4 col-sm-6 col-xs-12 single-port photo">
                         <div class="project-item">
                             <a href="images/port/fresh_feeling.jpg" class="zoom1">
                                 <img src="images/port/fresh_feeling_small.jpg" alt="portfolio image">
@@ -425,8 +393,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-6 col-xs-12 single-port logo-design"
-                        style="position: absolute; left: 760px; top: 285px;">
+                    <div class="col-md-4 col-sm-6 col-xs-12 single-port logo-design">
                         <div class="project-item">
                             <a href="images/port/srl.jpg" class="zoom1">
                                 <img src="images/port/srl_small.jpg" alt="portfolio image">
@@ -439,8 +406,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-6 col-xs-12 single-port ui web"
-                        style="position: absolute; left: 0px; top: 285px;">
+                    <div class="col-md-4 col-sm-6 col-xs-12 single-port ui web">
                         <div class="project-item">
                             <a href="images/port/srl_web.jpg" class="zoom1">
                                 <img src="images/port/srl_web_small.jpg" alt="portfolio image">
@@ -453,8 +419,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-6 col-xs-12 single-port logo-design"
-                        style="position: absolute; left: 760px; top: 285px;">
+                    <div class="col-md-4 col-sm-6 col-xs-12 single-port logo-design">
                         <div class="project-item">
                             <a href="images/port/ksc.jpg" class="zoom1">
                                 <img src="images/port/ksc_small.jpg" alt="portfolio image">
@@ -467,8 +432,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-6 col-xs-12 single-port photo"
-                        style="position: absolute; left: 760px; top: 285px;">
+                    <div class="col-md-4 col-sm-6 col-xs-12 single-port photo">
                         <div class="project-item">
                             <a href="images/port/khayyam.jpg" class="zoom1">
                                 <img src="images/port/khayyam_small.jpg" alt="portfolio image">
@@ -481,8 +445,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-6 col-xs-12 single-port logo-design"
-                        style="position: absolute; left: 760px; top: 285px;">
+                    <div class="col-md-4 col-sm-6 col-xs-12 single-port logo-design">
                         <div class="project-item">
                             <a href="images/port/naser_khosro.jpg" class="zoom1">
                                 <img src="images/port/naser_khosro_small.jpg" alt="portfolio image">
@@ -495,8 +458,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-6 col-xs-12 single-port paint"
-                        style="position: absolute; left: 0px; top: 285px;">
+                    <div class="col-md-4 col-sm-6 col-xs-12 single-port paint">
                         <div class="project-item">
                             <a href="images/port/moon.jpg" class="zoom1">
                                 <img src="images/port/moon_small.jpg" alt="portfolio image">
@@ -509,8 +471,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-6 col-xs-12 single-port photo"
-                        style="position: absolute; left: 760px; top: 285px;">
+                    <div class="col-md-4 col-sm-6 col-xs-12 single-port photo">
                         <div class="project-item">
                             <a href="images/port/sunset.jpg" class="zoom1">
                                 <img src="images/port/sunset_small.jpg" alt="portfolio image">
@@ -523,8 +484,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-6 col-xs-12 single-port paint"
-                        style="position: absolute; left: 380px; top: 285px;">
+                    <div class="col-md-4 col-sm-6 col-xs-12 single-port paint">
                         <div class="project-item">
                             <a href="images/port/tree.jpg" class="zoom1">
                                 <img src="images/port/tree_small.jpg" alt="portfolio image">
@@ -570,10 +530,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"
-        integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
-        crossorigin="anonymous"></script> -->
-
+    
     <!--Font Awesome js-->
     <script src="https://kit.fontawesome.com/de7639e506.js" crossorigin="anonymous"></script>
 

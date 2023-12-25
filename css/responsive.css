@@ -12,34 +12,12 @@
         letter-spacing: 5px;
     }
 
-    .navbar-nav {
-        margin: 10px 0;
-    }
-
-    .sticky_navigation .navbar-nav {
-        margin: 20px 0;
-    }
-
-    .navbar-brand {
-        padding: 20px 0;
-    }
-
-    .navbar-nav li {
-        margin: 9px 0;
-    }
-
-    .navbar-nav > li > a {
-        line-height: 0;
-    }
-
     .nav > li > a {
         padding: 10px 5px;
     }
 
     .sticky_navigation .nav li.active a {
-
         color: #262626;
-
     }
 
     .sticky_navigation .nav li.active::before {
@@ -74,36 +52,12 @@
         margin-top: 15px;
     }
 
-    .navbar-toggle {
-        margin-top: 15px;
-    }
-
-    .navbar-toggle .icon-bar {
+    .navbar-toggler {
         background: #ffffff;
-    }
-    
-    .sticky_navigation .navbar-toggle .icon-bar{
-        background: #262626;
     }
 
     .sticky_navigation .nav li.active::after {
         border-bottom: 1px solid #ffffff;
-    }
-
-    .navbar-nav {
-        float: right;
-        margin: 11px 21px;
-        margin-right: 32%;
-        display: inherit;
-        width: 200px;
-        background-color: transparent;
-    }
-
-    .navbar-nav li {
-        float: left;
-        margin: 9px 50px;
-        display: inherit;
-        width: 100%;
     }
 
     .navbar-fixed-top .navbar-collapse {
@@ -115,28 +69,16 @@
         max-height: 100%;
     }
 
-    .sticky_navigation .nav li a {
-        color: #ffffff;
-    }
-
-    .sticky_navigation .nav li.active a {
-        color: #ffffff;
-    }
-
     .welcome-text h2 {
         font-size: 2em;
     }
     
     .connn-right {
-	margin-bottom: 50px;
-}
+        margin-bottom: 50px;
+    }
 
     .navbar-nav {
         text-align: center;
-    }
-
-    .nav-area.sticky_navigation {
-        height: 60px;
     }
 
     .welcome-text h1.ah-headline {
@@ -233,17 +175,8 @@
 /* Wide Mobile Layout: 480px. */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 
-
-    .navbar-nav {
-        margin-right: 38%;
-    }
-
-    .navbar-toggle .icon-bar {
+    .navbar-toggler .navbar-toggler-icon {
         background: #ffffff;
-    }
-
-    .nav-area.sticky_navigation .navbar-toggle .icon-bar{
-        background: #262626;
     }
 
     .single-portfolio img {
@@ -279,9 +212,6 @@
 
 
 @media only screen and (min-width: 600px) and (max-width: 767px){
-    .navbar-nav li {
-        margin: 9px 0;
-    }
 
     .welcome-text h1.ah-headline {
         font-size: 40px;

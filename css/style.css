@@ -268,17 +268,8 @@ img {
 
 /*---------- 4. Nav area css starts -------------*/
 
-.nav-area {
-    height: 65px;
-}
-
 .nav-area.sticky_navigation {
     background: #fafafa;
-    height: 80px;
-}
-
-.navbar-nav {
-    margin-top: 15px;
 }
 
 .sticky_navigation {
@@ -289,10 +280,6 @@ img {
     box-shadow: 0px 3px 4.6px 0.3px rgba(0, 0, 0, 0.25);
 }
 
-.sticky_navigation .main-menu {
-    margin-top: 0;
-}
-
 .sticky_navigation .navbar-brand,
 .sticky_navigation .navbar-brand span {
     color: #000000;
@@ -300,8 +287,13 @@ img {
 
 .sticky_navigation .navbar-brand:hover,
 .sticky_navigation .navbar-brand:focus,
-.sticky_navigation .navbar-brand span {
+.sticky_navigation .navbar-brand span, 
+.sticky_navigation .navbar-toggler {
     color: #262626;
+}
+
+.nav li a {
+    color: #ffffff;
 }
 
 .sticky_navigation .nav li a {
@@ -328,7 +320,6 @@ img {
     -webkit-transition: all 0.4s ease-out;
     -o-transition: all 0.4s ease-out;
     transition: all 0.4s ease-out;
-    margin-top: 10px;
 }
 
 .navbar {
@@ -337,39 +328,15 @@ img {
 }
 
 .navbar-brand {
-    padding: 25px 0;
     text-transform: uppercase;
     font-size: 25px;
-    display: block;
     color: #ffffff;
     font-weight: 800;
-}
-
-.logo {
-    padding: 5px;
-    font-size: 32px;
-    /* letter-spacing: 3px; */
 }
 
 .navbar-brand:focus,
 .navbar-brand:hover {
     text-decoration: none;
-    color: #ffffff;
-}
-
-.navbar-right li {
-    display: inline-block;
-    float: none;
-}
-
-.navbar-right li a {
-    color: #ffffff;
-    text-transform: uppercase;
-    font-weight: 600;
-}
-
-.navbar-right li.active a {
-    font-weight: bold;
     color: #ffffff;
 }
 
@@ -379,7 +346,7 @@ img {
     background: none;
 }
 
-.navbar-toggle .icon-bar {
+.navbar-toggler .icon-bar {
     background: #033D75;
 }
 
@@ -933,7 +900,7 @@ ul.port-nav-list li a.active {
 }
 
 .single-port {
-    padding: 0;
+    padding: 10px;
 }
 
 /*-------- Portfolio area css ends---------*/

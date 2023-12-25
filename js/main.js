@@ -161,6 +161,8 @@ $(document).ready(function () {
 
     function persian_language() {
         lang = lang_fa;
+        $("#bootstrap").attr("href", "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css");
+   
         $("html").css("direction", "rtl");
         $("body").css("direction", "rtl");
         $(".banner-bg").css("transform", "scaleX(-1)");
@@ -180,6 +182,8 @@ $(document).ready(function () {
 
     function english_language() {
         lang = lang_en;
+        $("#bootstrap").attr("href", "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css");
+
         $("html").css("direction", "ltr");
         $("body").css("direction", "ltr");
         $(".banner-bg").css("transform", "scaleX(1)");

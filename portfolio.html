@@ -44,8 +44,10 @@
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 
     <!--Bootstrap css-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
-        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous"> -->
 
     <!--Animated headline css-->
     <link rel="stylesheet" href="css/jquery.animatedheadline.css">
@@ -70,46 +72,35 @@
 <body>
     <!--navigation area starts-->
 
-    <header class="nav-area navbar-fixed-top">
+    <nav class="nav-area navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <div class="row">
-                <!--main menu starts-->
-
-                <div class="col-md-12">
-                    <div class="main-menu">
-                        <div class="navbar navbar-cus">
-                            <div class="navbar-header">
-                                <a href="index.html" class="navbar-brand">
-                                    <span class="logo lang" key="name">Maryam</span>
-                                </a>
-                                <!--change logo name-->
-                                <button type="button" class="navbar-toggle" data-toggle="collapse"
-                                    data-target=".navbar-collapse">
-                                    <span class="sr-only">Toggle navigation</span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                </button>
-                            </div>
-
-                            <div class="navbar-collapse collapse">
-                                <nav>
-                                    <ul class="nav navbar-nav navbar-right">
-                                        <li class="active">
-                                            <a class="lang" href="index.html" key="back_to_home">Back to Home</a>
-                                        </li>
-                                        <li><button class="translate" id="fa">پارسی</button></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
+            <div class="main-menu">
+                        <a href="index.html" class="navbar-brand">
+                            <span class="logo lang" key="name">Maryam</span>
+                        </a>
+                        <!--change logo name-->
+                        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                            data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
                     </div>
-                </div>
 
-                <!--main menu ends-->
-            </div>
+                    <div class="navbar-collapse collapse d-flex">
+                        <ul class="navbar-nav navbar-right">
+                            <li class="active">
+                                <a class="lang" href="index.html" key="back_to_home">Back to Home</a>
+                            </li>
+                            <li><button class="translate" id="fa">پارسی</button></li>
+                        </ul>
+                
+                </div>
+       
+
         </div>
-    </header>
+    </nav>
 
     <!--navigation area ends-->
 
@@ -168,8 +159,10 @@
                                 <li><a class="img-filter lang" data-filter=".web" key="Web_Design">Web Design</a></li>
                                 <li><a class="img-filter lang" data-filter=".ui" key="UI_Design">UI Design</a></li>
                                 <li><a class="img-filter lang" data-filter=".logo-design" key="Logo">Logo</a></li>
-                                <li><a class="img-filter lang" data-filter=".publication" key="Publication">Publication</a></li>
-                                <li><a class="img-filter lang" data-filter=".social" key="Social_Media">Social Media</a></li>
+                                <li><a class="img-filter lang" data-filter=".publication"
+                                        key="Publication">Publication</a></li>
+                                <li><a class="img-filter lang" data-filter=".social" key="Social_Media">Social Media</a>
+                                </li>
                                 <li><a class="img-filter lang" data-filter=".paint" key="Painting">Painting</a></li>
                                 <li><a class="img-filter lang" data-filter=".photo" key="Photography">Photography</a>
                                 </li>
@@ -574,9 +567,12 @@
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
     <!--Bootstrap js-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"
-        integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+        crossorigin="anonymous"></script> -->
 
     <!--Font Awesome js-->
     <script src="https://kit.fontawesome.com/de7639e506.js" crossorigin="anonymous"></script>

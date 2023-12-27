@@ -54,4 +54,5 @@ lang_en = {
     social_marketing: "Social Marketing",
     social_marketing_description: "Helping you to increase your sales and attract more customers.",
     what_i_offer: "What I Offer",
+    my_clients: "My Clients",
 };

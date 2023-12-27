@@ -54,4 +54,5 @@ lang_fa = {
     social_marketing: "بازاریابی اجتماعی",
     social_marketing_description: "کمک به شما برای افزایش فروش و جذب مشتری.",
     what_i_offer: "آنچه من ارائه می‌دهم",
+    my_clients: "مشتریان من",
 };

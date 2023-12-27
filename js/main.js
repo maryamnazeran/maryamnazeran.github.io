@@ -125,6 +125,7 @@ $(document).ready(function () {
     $("#brand-carousel").owlCarousel({
         navigation: false,
         pagination: true,
+        rtl:true,
         slideSpeed: 800,
         paginationSpeed: 800,
         smartSpeed: 500,

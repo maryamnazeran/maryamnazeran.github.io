@@ -3,19 +3,13 @@
     <url>
         <loc>https://maryamnazeran.ir/</loc>
         <lastmod>2023-02-10</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1</priority>
-    </url>
-    <url>
-        <loc>https://maryamnazeran.ir/index.html</loc>
-        <lastmod>2023-02-10</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1</priority>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
     </url>
     <url>
         <loc>https://maryamnazeran.ir/portfolio.html</loc>
         <lastmod>2023-02-10</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>1</priority>
+        <priority>0.5</priority>
     </url>
 </urlset>

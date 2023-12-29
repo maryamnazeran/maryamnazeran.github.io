@@ -12,7 +12,6 @@ $(document).ready(function () {
 		}
 	});
 
-
 	//********** menu hides after click (mobile menu)
 
 	$(document).on('click', '.navbar-collapse.in', function (e) {
@@ -21,14 +20,12 @@ $(document).ready(function () {
 		}
 	});
 
-
 	//*********** scrollspy js
 
 	$('body').scrollspy({
 		target: '.navbar-collapse',
 		offset: 195
 	});
-
 
 	//************ smooth scroll js
 
@@ -59,15 +56,6 @@ $(document).ready(function () {
 	}, {
 		offset: "80%"
 	});
-    
-    //************ Magnific Popup
-
-    $('.zoom,.zoom1').magnificPopup({
-        type: 'image',
-        gallery: {
-            enabled: true
-        }
-    });
 	
     //*************** Isotope filter
 

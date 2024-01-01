@@ -69,6 +69,10 @@
         max-height: 100%;
     }
 
+    .navbar-collapse li {
+        margin: 10px;
+    }
+
     .welcome-text h2 {
         font-size: 2em;
     }

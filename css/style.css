@@ -46,14 +46,11 @@ body {
     line-height: 1.7;
     color: #333333;
     font-weight: 400;
+    position: relative;
 }
 
 .persian {
     /* font-family: "Ray Bold" !important; */
-    font-family: "Pinar" !important;
-}
-
-.translate {
     font-family: "Pinar" !important;
 }
 
@@ -268,7 +265,11 @@ img {
 
 /*---------- 4. Nav area css starts -------------*/
 
-.nav-area.sticky_navigation {
+.navbar {
+    background: rgba(0, 0, 0, 0.75);
+}
+
+.navbar.sticky_navigation {
     background: #fafafa;
 }
 
@@ -293,18 +294,26 @@ img {
 }
 
 .nav li a {
+    color: #fafafa;
+}
+
+.nav li a:hover {
     color: #ffffff;
+}
+
+.nav li a.active {
+    color: #ffffff !important;
 }
 
 .sticky_navigation .nav li a {
     color: #262626;
 }
 
-.sticky_navigation .nav li.active a {
-    color: #262626;
+.sticky_navigation .nav li a.active {
+    color: #262626 !important;
 }
 
-.sticky_navigation .nav li.active::after {
+.sticky_navigation .nav li a.active::after {
     border-bottom: 1px solid #262626;
     content: "";
     display: block;
@@ -1097,7 +1106,6 @@ ul.port-nav-list li a.active {
 
 .social-icons .icon {
     font-size: 24px;
-    padding-right: 20px;
     color: #fff;
 }
 

@@ -20,14 +20,6 @@
         color: #262626;
     }
 
-    .sticky_navigation .nav li.active::before {
-        margin: 5px auto;
-    }
-
-    .sticky_navigation .nav li.active::after {
-        margin: 5px auto;
-    }
-
     .sticky_navigation .navbar-brand {
         line-height: 45px;
     }
@@ -56,6 +48,7 @@
         border: none;
         outline: none;
         background: none;
+        color: #ffffff;
     }
 
     .sticky_navigation .nav li.active::after {
@@ -72,15 +65,11 @@
     }
 
     .navbar-collapse li {
-        margin: 10px;
+        margin: 4px;
     }
 
     .welcome-text h2 {
         font-size: 2em;
-    }
-
-    .connn-right {
-        margin-bottom: 50px;
     }
 
     .navbar-nav {

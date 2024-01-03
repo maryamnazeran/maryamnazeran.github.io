@@ -4,8 +4,8 @@ $(document).ready(function () {
     //********** menu background color change while scroll
 
     $(window).on('scroll', function () {
-        var menu_area = $('.nav-area');
-        if ($(window).scrollTop() > 200) {
+        var menu_area = $('nav');
+        if ($(window).scrollTop() > 150) {
             menu_area.addClass('sticky_navigation');
         } else {
             menu_area.removeClass('sticky_navigation');
@@ -146,15 +146,10 @@ $(document).ready(function () {
         $("#bootstrap").attr("href", "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css");
 
         $("html").css("direction", "rtl");
-        $("body").css("direction", "rtl");
         $(".banner-bg").css("transform", "scaleX(-1)");
         $(".skillbar-percent").css("float", "left");
         $(".ah-words-wrapper").addClass("ah-words-wrapper-rtl");
-        $(".social-icons .icon").css("padding-right", "0px");
-        $(".social-icons .icon").css("padding-left", "20px");
-
         $(".translate").attr("id", "en");
-        $(".translate").text("English");
 
         $(".lang").each(function (index, element) {
             $(this).text(lang[$(this).attr("key")]);
@@ -167,15 +162,10 @@ $(document).ready(function () {
         $("#bootstrap").attr("href", "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css");
 
         $("html").css("direction", "ltr");
-        $("body").css("direction", "ltr");
         $(".banner-bg").css("transform", "scaleX(1)");
         $(".skillbar-percent").css("float", "right");
         $(".ah-words-wrapper").removeClass("ah-words-wrapper-rtl");
-        $(".social-icons .icon").css("padding-right", "20px");
-        $(".social-icons .icon").css("padding-left", "0px");
-
         $(".translate").attr("id", "fa");
-        $(".translate").text("پارسی");
 
         $(".lang").each(function (index, element) {
             $(this).text(lang[$(this).attr("key")]);

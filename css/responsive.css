@@ -12,7 +12,7 @@
         letter-spacing: 5px;
     }
 
-    .nav > li > a {
+    .nav>li>a {
         padding: 10px 5px;
     }
 
@@ -53,7 +53,9 @@
     }
 
     .navbar-toggler {
-        background: #ffffff;
+        border: none;
+        outline: none;
+        background: none;
     }
 
     .sticky_navigation .nav li.active::after {
@@ -76,7 +78,7 @@
     .welcome-text h2 {
         font-size: 2em;
     }
-    
+
     .connn-right {
         margin-bottom: 50px;
     }
@@ -98,15 +100,15 @@
         margin-top: 20px;
     }
 
-    .about-text-left h2{
+    .about-text-left h2 {
         text-align: center;
     }
 
-    .about-text-left h3{
+    .about-text-left h3 {
         text-align: center;
     }
 
-    .about-text-left p{
+    .about-text-left p {
         text-align: center;
     }
 
@@ -127,22 +129,22 @@
     .services-area .section-header {
         margin-bottom: 0;
     }
-    
+
     .about-text-left a {
-	    display: inline-block;
+        display: inline-block;
     }
-    
+
     .social-area {
-	    text-align: center;
+        text-align: center;
     }
-    
+
     .section-title h2 {
-	    font-size: 30px;
+        font-size: 30px;
         letter-spacing: 2px;
     }
-    
+
     ul.port-nav-list li {
-	    margin-bottom: 15px;
+        margin-bottom: 15px;
     }
 
     .service {
@@ -179,10 +181,6 @@
 /* Wide Mobile Layout: 480px. */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 
-    .navbar-toggler .navbar-toggler-icon {
-        background: #ffffff;
-    }
-
     .single-portfolio img {
         width: 100%;
     }
@@ -194,8 +192,8 @@
 
 
 
-@media only screen and (min-width: 375px) and (max-width: 767px){
-    .portfolio-area .list-inline > li {
+@media only screen and (min-width: 375px) and (max-width: 767px) {
+    .portfolio-area .list-inline>li {
         padding-right: 0;
     }
 
@@ -204,10 +202,11 @@
     }
 }
 
-@media only screen and (min-width: 411px) and (max-width: 767px){
+@media only screen and (min-width: 411px) and (max-width: 767px) {
     .carousel-caption h1 {
         font-size: 33px;
     }
+
     .timeline-area {
         width: 380px;
     }
@@ -215,7 +214,7 @@
 }
 
 
-@media only screen and (min-width: 600px) and (max-width: 767px){
+@media only screen and (min-width: 600px) and (max-width: 767px) {
 
     .welcome-text h1.ah-headline {
         font-size: 40px;
@@ -227,5 +226,3 @@
     }
 
 }
-
-

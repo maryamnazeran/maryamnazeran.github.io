@@ -82,34 +82,6 @@ $(document).ready(function () {
         }).trigger('resize');
     }
 
-    // counter-up js
-    const counterUp = window.counterUp.default;
-
-    const callback = entries => {
-        entries.forEach(entry => {
-            const el = entry.target
-            if (entry.isIntersecting && !el.classList.contains('is-visible')) {
-                for (const counter of counters) {
-                    counterUp(counter, {
-                        duration: 1000,
-                        delay: 16,
-                    });
-                    el.classList.add('is-visible');
-                }
-            }
-        })
-    }
-
-    // observer
-    const IO = new IntersectionObserver(callback, { threshold: 1 });
-
-    // First element to target
-    const el = document.querySelector('.counter');
-
-    // all numbers
-    const counters = document.querySelectorAll('.counter');
-    IO.observe(el);
-
     $('.client-testimonial-carousel').owlCarousel({
         loop: true,
         margin: 10,
@@ -209,6 +181,18 @@ $(document).ready(function () {
             $(this).text(lang[$(this).attr("key")]);
             $(this).removeClass("persian");
         });
+    }
+});
+
+document.addEventListener('click', function (event) {
+    var isClickInside = document.getElementById('navbarSupportedContent').contains(event.target);
+
+    if (!isClickInside) {
+        // Close the Navbar when clicking outside
+        var navbarToggler = document.querySelector('.navbar-toggler');
+        if (navbarToggler.getAttribute('aria-expanded') === 'true') {
+            navbarToggler.click();
+        }
     }
 });
 

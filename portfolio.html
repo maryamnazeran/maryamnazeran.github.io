@@ -71,7 +71,7 @@
 <body>
     <!--navigation area starts-->
 
-    <nav class="nav-area navbar navbar-expand-lg fixed-top">
+    <nav class="nav-area navbar navbar-expand-md fixed-top">
         <div class="container main-menu">
             <a href="index.html" class="navbar-brand lang" key="name">
                 Maryam
@@ -163,7 +163,7 @@
             </div>
 
             <div class="container pswp-gallery pswp-gallery--single-column" id="my-gallery">
-                <div class="row port-items" id="img-filter" style="position: relative;">
+                <div class="row" id="img-filter">
 
                     <div class="col-md-4 col-sm-6 col-xs-12 single-port publication">
                         <div class="project-item">
@@ -768,6 +768,35 @@
     <script src="js/languages/lang.fa.js"></script>
 
     <script type="module">
+        // counter-up js
+        const counterUp = window.counterUp.default;
+
+        const callback = entries => {
+            entries.forEach(entry => {
+                const el = entry.target
+                if (entry.isIntersecting && !el.classList.contains('is-visible')) {
+                    for (const counter of counters) {
+                        counterUp(counter, {
+                            duration: 1000,
+                            delay: 16,
+                        });
+                        el.classList.add('is-visible');
+                    }
+                }
+            })
+        }
+
+        // observer
+        const IO = new IntersectionObserver(callback, { threshold: 1 });
+
+        // First element to target
+        const el = document.querySelector('.counter');
+
+        // all numbers
+        const counters = document.querySelectorAll('.counter');
+        IO.observe(el);
+
+        // photoswipe
         import PhotoSwipeLightbox from './js/photoswipe-lightbox.esm.js';
         import ObjectPosition from '/js/photoswipe-object-position.js';
         import PhotoSwipeDynamicCaption from 'https://unpkg.com/photoswipe-dynamic-caption-plugin/photoswipe-dynamic-caption-plugin.esm.js';

@@ -346,10 +346,6 @@ img {
     background: none;
 }
 
-.navbar-toggler .icon-bar {
-    background: #033D75;
-}
-
 /*---------- Nav area css ends -------------*/
 
 /*----------- 5. Banner area css starts--------------*/
@@ -798,6 +794,7 @@ canvas {
     -o-transition: all .5s ease;
     transition: all .5s ease;
     cursor: crosshair;
+    margin: 8px;
 }
 
 .overlay .overlay-inner {
@@ -890,19 +887,9 @@ ul.port-nav-list li a.active {
 
 }
 
-.port-items {
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-}
-
-.portfolio-items .port-items .single-port {
-    overflow: hidden;
-    margin-bottom: 25px;
-}
-
 .single-port {
-    padding: 10px;
+    overflow: hidden;
+    padding: 8px;
 }
 
 /*-------- Portfolio area css ends---------*/

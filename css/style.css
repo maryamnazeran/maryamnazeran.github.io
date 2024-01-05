@@ -460,8 +460,6 @@ canvas {
 
 /*---------- 6. About area css starts---------------*/
 
-
-
 .about-text-left h2 {
     font-weight: 700;
     font-size: 36px;
@@ -539,7 +537,6 @@ canvas {
 
 
 /*-------- 7. Services area starts ----------*/
-
 
 .services-area {
     background: #f8f8f8;
@@ -776,9 +773,18 @@ canvas {
 
 /*----------- 11. Portfolio area Starts --------*/
 
-
 .portfolio-area {
     background: #fafafa;
+}
+
+.single-port {
+    padding: 0px 8px 12px 8px;
+}
+
+.project-item {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
 }
 
 .project-item img {
@@ -791,9 +797,8 @@ canvas {
 .overlay {
     position: absolute;
     top: 0px;
-    left: 0px;
-    bottom: 0px;
-    right: 0px;
+    width: calc(100% - 16px);
+    height: 256px !important;
     background: rgba(0, 0, 0, 0.9);
     opacity: 0;
     -webkit-transition: all .5s ease;
@@ -801,8 +806,6 @@ canvas {
     -ms-transition: all .5s ease;
     -o-transition: all .5s ease;
     transition: all .5s ease;
-    cursor: crosshair;
-    margin: 8px;
 }
 
 .overlay .overlay-inner {
@@ -865,7 +868,7 @@ canvas {
 @media (hover: hover) and (pointer: fine) {
 
     /* Add your styles for mouse devices here */
-    .project-item a:hover .overlay {
+    .project-item:hover .overlay {
         opacity: 1;
     }
 }
@@ -898,11 +901,6 @@ ul.port-nav-list li a.active {
     border-color: #FFCB2F;
     background: #262626;
 
-}
-
-.single-port {
-    overflow: hidden;
-    padding: 0px 4px 8px 4px;
 }
 
 /*-------- Portfolio area css ends---------*/

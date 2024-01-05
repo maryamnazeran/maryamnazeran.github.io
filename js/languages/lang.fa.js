@@ -1,4 +1,4 @@
-lang_fa = {
+dict_fa = {
     greeting : "سلام! من مریم هستم",
     name: "مریم",
     home: "خانه",

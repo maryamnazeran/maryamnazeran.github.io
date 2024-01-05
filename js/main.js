@@ -1,3 +1,5 @@
+var language, dict;
+
 $(document).ready(function () {
     'use strict';
 
@@ -126,23 +128,20 @@ $(document).ready(function () {
         }
     });
 
-    var lang;
-    // The default language is English
-    lang = lang_en;
-    english_language();
-
     // get/set the selected language
     $(".translate").click(function () {
         if ($(this).attr("id") == "en") {
+            setLanguagePreference("en");
             english_language();
         }
         else {
+            setLanguagePreference("fa");
             persian_language();
         }
     });
 
     function persian_language() {
-        lang = lang_fa;
+        dict = dict_fa;
         $("#bootstrap").attr("href", "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css");
 
         $("html").css("direction", "rtl");
@@ -152,13 +151,13 @@ $(document).ready(function () {
         $(".translate").attr("id", "en");
 
         $(".lang").each(function (index, element) {
-            $(this).text(lang[$(this).attr("key")]);
+            $(this).text(dict[$(this).attr("key")]);
             $(this).addClass("persian");
         });
     }
 
     function english_language() {
-        lang = lang_en;
+        dict = dict_en;
         $("#bootstrap").attr("href", "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css");
 
         $("html").css("direction", "ltr");
@@ -168,12 +167,62 @@ $(document).ready(function () {
         $(".translate").attr("id", "fa");
 
         $(".lang").each(function (index, element) {
-            $(this).text(lang[$(this).attr("key")]);
+            $(this).text(dict[$(this).attr("key")]);
             $(this).removeClass("persian");
         });
     }
+
+    // language cookie
+    // Function to set a cookie
+    function setCookie(name, value, days) {
+        var expires = "";
+        if (days) {
+            var date = new Date();
+            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+            expires = "; expires=" + date.toUTCString();
+        }
+        document.cookie = name + "=" + value + expires + "; path=/";
+    }
+
+    // Function to get the value of a cookie
+    function getCookie(name) {
+        var nameEQ = name + "=";
+        var ca = document.cookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+        }
+        return null;
+    }
+
+    // Function to check if a cookie exists
+    function checkCookie(name) {
+        var cookie = getCookie(name);
+        return cookie !== null;
+    }
+
+    // Function to set language preference
+    function setLanguagePreference(language) {
+        setCookie('language', language, 365); // Set cookie to expire in 365 days
+    }
+
+    // Example: Get the preferred language from the cookie or set a default
+    var language = getCookie('language');
+    if (!language) {
+        // Set a default language if the cookie doesn't exist
+        language = 'en'; // Default language is English
+        setLanguagePreference(language);
+    }
+    if (language == "en") {
+        english_language();
+    }
+    else if (language == "fa") {
+        persian_language();
+    }
 });
 
+// navbar
 document.addEventListener('click', function (event) {
     var isClickInside = document.getElementById('navbarSupportedContent').contains(event.target);
 

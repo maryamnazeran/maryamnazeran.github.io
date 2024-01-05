@@ -1,4 +1,4 @@
-lang_en = {
+dict_en = {
     greeting : "Hi! I am Maryam",
     name: "Maryam",
     home: "Home",

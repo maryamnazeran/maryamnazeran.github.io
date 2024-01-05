@@ -179,8 +179,6 @@
     }
 }
 
-
-
 @media only screen and (min-width: 375px) and (max-width: 767px) {
     .portfolio-area .list-inline>li {
         padding-right: 0;
@@ -201,7 +199,6 @@
     }
 
 }
-
 
 @media only screen and (min-width: 600px) and (max-width: 767px) {
 

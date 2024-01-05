@@ -293,7 +293,8 @@ img {
     color: #262626;
 }
 
-.nav li a {
+.nav li a, 
+.nav li a:focus {
     color: #fafafa;
 }
 
@@ -305,7 +306,8 @@ img {
     color: #ffffff !important;
 }
 
-.sticky_navigation .nav li a {
+.sticky_navigation .nav li a, 
+.sticky_navigation .nav li a:focus {
     color: #262626;
 }
 

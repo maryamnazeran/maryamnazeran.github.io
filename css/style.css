@@ -775,12 +775,35 @@ canvas {
 
 /*----------- 11. Portfolio area Starts --------*/
 
-.portfolio-area {
+.portfolio-1-area {
     background: #fafafa;
 }
 
+.portfolio-2-area {
+    background-image: url(../images/statistic/stats.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.portfolio-2-area:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: -1;
+}
+
 .single-port {
-    padding: 0px 8px 12px 8px;
+    padding: 12px 12px 12px 12px;
 }
 
 .project-item {
@@ -791,9 +814,10 @@ canvas {
 
 .project-item img {
     width: 100%;
-    height: 256px !important;
+    /* height: 256px !important; */
     object-fit: cover !important;
     /* filter: grayscale(100%); */
+    border-radius: 16px;
 }
 
 .overlay {
@@ -884,13 +908,13 @@ ul.port-nav-list {
 ul.port-nav-list li {
     display: inline-block;
     margin-right: 10px;
-    border: 2px solid #262626;
+    border: 2px solid #fafafa;
 }
 
 ul.port-nav-list li a {
     display: block;
     cursor: pointer;
-    color: #262626;
+    color: #fafafa;
     font-size: 14px;
     padding: 8px 20px;
     text-decoration: none;
@@ -902,7 +926,6 @@ ul.port-nav-list li a.active {
     color: #fafafa;
     border-color: #FFCB2F;
     background: #262626;
-
 }
 
 /*-------- Portfolio area css ends---------*/
@@ -1113,4 +1136,58 @@ ul.port-nav-list li a.active {
 
 .about-right {
     text-align: justify;
+}
+
+.skills {
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+    border-radius: 8px;
+    position: absolute;
+    box-shadow: 24px 0 72px rgba(54, 32, 152, .3)
+}
+
+.skills.illustrator {
+    background-color: #390000;
+    top: 20px;
+    left: -30px
+}
+
+.skills.photoshop {
+    background-color: #001631;
+    right: 70px;
+    top: 80px
+}
+
+.skills.figma {
+    background-color: #fff;
+    bottom: 60px;
+    left: 140px
+}
+
+.skills .svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px
+}
+
+.skills.illustrator .svg {
+    color: #ff9a00
+}
+
+.skills.photoshop .svg {
+    color: #00a9ff
+}
+
+.desc {
+    position: relative;
+    top: 0;
+    transition: all .3s ease;
+}
+
+.desc:hover {
+    top: -10px;
 }

@@ -54,6 +54,11 @@
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/owl.theme.default.css">
 
+    <!--PhotoSwipe css-->
+    <link rel="stylesheet" href="css/photoswipe.css">
+    <link rel="stylesheet"
+        href="https://unpkg.com/photoswipe-dynamic-caption-plugin/photoswipe-dynamic-caption-plugin.css">
+
     <!--line icon css-->
     <link rel="stylesheet" href="css/line-icons.min.css">
 
@@ -72,8 +77,9 @@
             <a href="/" class="navbar-brand lang" key="name">
                 Maryam
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <i class="fa-solid fa-bars"></i>
             </button>
             <div class="navbar-collapse collapse" id="navbarSupportedContent">
@@ -88,13 +94,13 @@
                         <a class="nav-link smooth-menu lang" href="#services" key="services">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link lang" href="/portfolio.html" key="portfolio">Portfolio</a>
+                        <a class="nav-link lang" href="#portfolio" key="portfolio">Portfolio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link translate" href="#" id="fa" role="button">
                             <i class="fa-solid fa-globe"></i>
                             English
-                            <span class="text-secondary"> | </span> 
+                            <span class="text-secondary"> | </span>
                             <span class="persian">پارسی</span>
                         </a>
                     </li>
@@ -163,7 +169,7 @@
 
                                     <a href="https://resume.io/r/wlbQi2f6H" class="btn banner-btn lang" target="_blank"
                                         key="My_CV">My CV</a>
-                                    <a href="portfolio.html" class="btn banner-btn lang" key="My_Portfolio">
+                                    <a href="#portfolio" class="btn banner-btn lang" key="My_Portfolio">
                                         My Portfolio
                                     </a>
                                 </section>
@@ -190,23 +196,107 @@
     <div class="about-area section-padding" id="about">
         <div class="container">
             <div class="row">
-                <!-- <div class="col-md-4 col-sm-12">
-                    <div class="about-left">
-                        <img loading="lazy" src="images/about/about.jpg" alt="about image">
+                <div class="col-md-4 col-sm-12">
+                    <div class="position-relative">
+                        <!-- <img loading="lazy" src="images/about/about.jpg" alt="about image"> -->
+                        <img src="images/about/avatar.png" alt="image">
+                        <span class="skills illustrator anim_moveBottom">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 231.597 231.597"
+                                xml:space="preserve" class="svg replaced-svg">
+                                <g id="XMLID_449_">
+                                    <path id="XMLID_450_"
+                                        d="M2.499,211.77h42.076c1.123,0,2.109-0.749,2.41-1.832l12.271-44.237h47.637l13.313,44.289   c0.318,1.057,1.291,1.78,2.395,1.78h43.672c0.008,0,0.016,0,0.02,0c1.381,0,2.5-1.119,2.5-2.5c0-0.369-0.078-0.719-0.223-1.034   l-55.564-179.19c-0.324-1.046-1.293-1.76-2.389-1.76h-53.26c-1.1,0-2.07,0.718-2.391,1.769L0.109,208.539   c-0.23,0.758-0.09,1.581,0.381,2.218C0.962,211.394,1.706,211.77,2.499,211.77z M99.554,130.342H66.511l9.764-34.902   c1.773-6.289,3.449-13.731,5.07-20.928c0.371-1.653,0.736-3.275,1.098-4.861c2.145,8.622,4.504,17.937,6.869,25.815L99.554,130.342   z">
+                                    </path>
+                                    <path id="XMLID_453_"
+                                        d="M187.288,76.551c-1.381,0-2.5,1.119-2.5,2.5V209.27c0,1.381,1.119,2.5,2.5,2.5h40.477   c1.381,0,2.5-1.119,2.5-2.5V79.051c0-1.381-1.119-2.5-2.5-2.5H187.288z">
+                                    </path>
+                                    <path id="XMLID_454_"
+                                        d="M207.261,65.571c14.102,0,24.336-9.563,24.336-22.795c-0.307-13.512-10.205-22.949-24.07-22.949   c-7.078,0-13.363,2.442-17.697,6.878c-4.067,4.16-6.234,9.886-6.108,16.127c-0.129,6.043,2.043,11.666,6.119,15.84   C194.185,63.121,200.372,65.571,207.261,65.571z">
+                                    </path>
+                                </g>
+                                <g> </g>
+                                <g> </g>
+                                <g> </g>
+                                <g> </g>
+                                <g> </g>
+                                <g> </g>
+                                <g> </g>
+                                <g> </g>
+                                <g> </g>
+                                <g> </g>
+                                <g> </g>
+                                <g> </g>
+                                <g> </g>
+                                <g> </g>
+                                <g> </g>
+                            </svg>
+                        </span>
+                        <span class="skills photoshop  anim_moveBottom">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 243.852 243.852"
+                                xml:space="preserve" class="svg replaced-svg">
+                                <g id="XMLID_309_">
+                                    <path id="XMLID_311_"
+                                        d="M45.213,211.003v-61.364c3.273,0.319,7.133,0.485,11.346,0.485c25.676,0,46.436-6.773,60.043-19.594   c11.146-10.589,17.287-26.365,17.287-44.42c0-17.536-7.334-33.392-20.109-43.494c-12.559-10.045-31.014-14.929-56.42-14.929   c-22.008,0-40.605,1.266-55.279,3.764C0.879,31.654,0,32.696,0,33.915v177.088c0,1.381,1.119,2.5,2.5,2.5h40.213   C44.094,213.503,45.213,212.384,45.213,211.003z M45.213,113.339V64.405c2.455-0.471,7.066-1.094,14.275-1.094   c18.551,0,29.19,8.698,29.19,23.863c0,16.776-12.105,26.793-32.385,26.793C51.428,113.967,47.963,113.775,45.213,113.339z">
+                                    </path>
+                                    <path id="XMLID_334_"
+                                        d="M206.76,129.02c-16.568-5.798-19.363-8.559-19.363-12.553c0-7.093,8.109-8.152,12.945-8.152   c10.268,0,20.979,3.852,27.031,7.15c0.678,0.369,1.484,0.405,2.193,0.098c0.705-0.308,1.232-0.924,1.424-1.67l7.191-27.959   c0.293-1.141-0.25-2.332-1.303-2.858c-7.465-3.732-21.332-7.721-37.869-7.721c-32.674,0-55.494,18.549-55.494,45.065   c-0.221,12.937,6.317,30.649,38.725,41.558c15.742,5.248,17.465,7.975,17.465,12.542c0,2.082,0,8.418-14.809,8.418   c-11.094,0-26.072-4.927-33.588-9.491c-0.682-0.413-1.516-0.478-2.252-0.174c-0.734,0.303-1.281,0.938-1.473,1.71l-7.189,29.028   c-0.274,1.107,0.236,2.258,1.238,2.8c10.998,5.944,26.768,9.354,43.264,9.354c36.365,0,58.955-17.08,58.955-44.608   C243.563,150.866,232.119,137.746,206.76,129.02z">
+                                    </path>
+                                </g>
+                                <g> </g>
+                                <g> </g>
+                                <g> </g>
+                                <g> </g>
+                                <g> </g>
+                                <g> </g>
+                                <g> </g>
+                                <g> </g>
+                                <g> </g>
+                                <g> </g>
+                                <g> </g>
+                                <g> </g>
+                                <g> </g>
+                                <g> </g>
+                                <g> </g>
+                            </svg>
+                        </span>
+                        <span class="skills figma  anim_moveBottom">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24"
+                                class="svg replaced-svg">
+                                <g fill="none" fill-rule="evenodd" transform="translate(4)">
+                                    <circle cx="12" cy="12" r="4" fill="#19BCFE"></circle>
+                                    <path fill="#09CF83"
+                                        d="M4,24 C6.209139,24 8,22.209139 8,20 C8,19.3969461 8,18.0636128 8,16 C6.20303877,16 4.86970543,16 4,16 C1.790861,16 0,17.790861 0,20 C0,22.209139 1.790861,24 4,24 Z">
+                                    </path>
+                                    <path fill="#A259FF"
+                                        d="M4,16 C4.73637967,16 6.069713,16 8,16 L8,8 C6.069713,8 4.73637967,8 4,8 C1.790861,8 0,9.790861 0,12 C0,14.209139 1.790861,16 4,16 Z">
+                                    </path>
+                                    <path fill="#F24E1E"
+                                        d="M4,8 C4.73637967,8 6.069713,8 8,8 L8,0 C6.069713,0 4.73637967,0 4,0 C1.790861,0 0,1.790861 0,4 C0,6.209139 1.790861,8 4,8 Z">
+                                    </path>
+                                    <path fill="#FF7262"
+                                        d="M12,8 L8,8 L8,8 L8,0 L12,0 L12,0 C14.209139,0 16,1.790861 16,4 C16,6.209139 14.209139,8 12,8 Z">
+                                    </path>
+                                </g>
+                            </svg>
+                        </span>
                     </div>
-                </div> -->
-                <div class="col-md-12 col-sm-12">
+                </div>
+                <div class="col-md-8 col-sm-12">
                     <div class="about-right">
                         <h2 class="lang" key="about_title">My Little Story</h2>
                         <p class="lang" key="about_text">
-                            I am Maryam Nazeran, Master of Graphic Design, creative and enthusiastic person. I always
+                            I am Maryam Nazeran, Master of Graphic Design, creative and enthusiastic person. I
+                            always
                             like to create something on my own which is helpful for others.
                         </p>
                         <p class="lang" key="about_text_2">
                             I am working at Exir Javani Clinic in the Mashhad, Iran and i have been
                             building noteworthy UX/UI designs and websites for years, which comply with the latest
                             design trends. I help convert a vision and an idea into meaningful and useful products.
-                            Having a sharp eye for product evolution helps me prioritize tasks, iterate fast and deliver
+                            Having a sharp eye for product evolution helps me prioritize tasks, iterate fast and
+                            deliver
                             faster.
                         </p>
                         <div class="about-text-right">
@@ -217,7 +307,8 @@
                                         <div class="skillbar" data-percent="95%"> <!--edit percentage-->
                                             <h6 class="skillbar-title lang" key="Designing">Designing</h6>
                                             <!--edit skills-->
-                                            <h6 class="skillbar-percent lang" key="_95">95%</h6> <!--edit percentage-->
+                                            <h6 class="skillbar-percent lang" key="_95">95%</h6>
+                                            <!--edit percentage-->
                                             <div class="skillbar-bar">
                                                 <div class="skillbar-child"></div>
                                             </div>
@@ -230,7 +321,8 @@
                                         <div class="skillbar" data-percent="90%"> <!--edit percentage-->
                                             <h6 class="skillbar-title lang" key="Painting">Painting</h6>
                                             <!--edit skills-->
-                                            <h6 class="skillbar-percent lang" key="_90">90%</h6> <!--edit percentage-->
+                                            <h6 class="skillbar-percent lang" key="_90">90%</h6>
+                                            <!--edit percentage-->
                                             <div class="skillbar-bar">
                                                 <div class="skillbar-child"></div>
                                             </div>
@@ -243,7 +335,8 @@
                                         <div class="skillbar" data-percent="85%"> <!--edit percentage-->
                                             <h6 class="skillbar-title lang" key="Photography">Photography</h6>
                                             <!--edit skills-->
-                                            <h6 class="skillbar-percent lang" key="_85">85%</h6> <!--edit percentage-->
+                                            <h6 class="skillbar-percent lang" key="_85">85%</h6>
+                                            <!--edit percentage-->
                                             <div class="skillbar-bar">
                                                 <div class="skillbar-child"></div>
                                             </div>
@@ -256,7 +349,8 @@
                                         <div class="skillbar" data-percent="50%"> <!--edit percentage-->
                                             <h6 class="skillbar-title lang" key="WordPress">WordPress</h6>
                                             <!--edit skills-->
-                                            <h6 class="skillbar-percent lang" key="_50">50%</h6> <!--edit percentage-->
+                                            <h6 class="skillbar-percent lang" key="_50">50%</h6>
+                                            <!--edit percentage-->
                                             <div class="skillbar-bar">
                                                 <div class="skillbar-child"></div>
                                             </div>
@@ -281,7 +375,8 @@
             <div class="row">
                 <div class="col-md-8 offset-md-2">
                     <div class="single-quotation">
-                        <h2 class="lang" key="quotation">"Dream Big, stay positive, work hard,<br>and enjoy the journey"
+                        <h2 class="lang" key="quotation">"Dream Big, stay positive, work hard,<br>and enjoy the
+                            journey"
                         </h2>
                         <!-- <h2>Be patient. Great things take time and empires aren't built in a day.</h2> -->
                         <!-- <p>Someone Famous</p> -->
@@ -374,6 +469,606 @@
     </div>
 
     <!--Services area ends-->
+
+
+    <!--Statistic area starts-->
+
+    <div class="statistic-area section-padding custom-border">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="item">
+                        <h2 class="counter">7000</h2> <!--edit-->
+                        <p class="lang" key="Hours_Worked">Hours Worked</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="item">
+                        <h2 class="counter">1200</h2> <!--edit-->
+                        <p class="lang" key="Cups_of_Coffee">Cups of Coffee</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="item">
+                        <h2 class="counter">12</h2> <!--edit-->
+                        <p class="lang" key="Happy_Clients">Happy Clients</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="item">
+                        <h2 class="counter">32</h2> <!--edit-->
+                        <p class="lang" key="Projects_Finished">Projects Finished</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Statistic area ends -->
+
+    <div class="portfolio-1-area section-padding" id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="section-title">
+                    <h2 class="lang" key="portfolio">Portfolio</h2>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row" id="">
+                <div class="col-md-4 col-sm-6 col-xs-12 single-port publication">
+                    <div class="desc"><img src="images/dark.png" alt="image">
+                        <h3 class="title text-center">Khadem Logistics Holding</h3>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 single-port publication">
+                    <div class="desc"><img src="images/light.png" alt="image">
+                        <h3 class="title text-center">Mine House</h3>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 single-port publication">
+                    <div class="desc"><img src="images/dark.png" alt="image">
+                        <h3 class="title text-center">Golestan</h3>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 single-port ui web">
+                    <a href="images/port/khadem_logistics_holding.jpg" class="project-item" data-pswp-width="1600"
+                        data-pswp-height="5640" data-cropped="true">
+                        <img src="images/port/khadem_logistics_holding_small.jpg" alt=""
+                            style="object-position: top;" />
+                        <span class="pswp-caption-content">
+                            <p class="m-0">Khadem Logistics Holding Website UI</p>
+                            <p class="m-0">2023</p>
+                        </span>
+                        <div class="overlay">
+                            <div class="overlay-inner">
+                                <h4>Khadem Logistics Holding Website</h4>
+                                <p key="Brand_Design">UI / UX Design</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12 single-port ui web">
+                    <a href="images/port/mine_house.jpg" class="project-item" data-pswp-width="3556"
+                        data-pswp-height="7861" data-cropped="true">
+                        <img src="images/port/mine_house_small.jpg" alt="" style="object-position: top;" />
+                        <span class="pswp-caption-content">
+                            <p class="m-0">Mine House Website UI</p>
+                            <p class="m-0">2023</p>
+                        </span>
+                        <div class="overlay">
+                            <div class="overlay-inner">
+                                <h4>Mine House</h4>
+                                <p key="UI_UX_Design">UI / UX Design</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12 single-port branding ui web">
+                    <a href="images/port/golestan.jpg" class="project-item" data-pswp-width="1080"
+                        data-pswp-height="1080" data-cropped="true">
+                        <img src="images/port/golestan_small.jpg" alt="" />
+                        <span class="pswp-caption-content">
+                            <p class="m-0">Golestan Website UI</p>
+                            <p class="m-0">2021</p>
+                        </span>
+                        <div class="overlay">
+                            <div class="overlay-inner">
+                                <h4>Golestan Website</h4>
+                                <p key="UI_UX_Design">UI / UX Design</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12 single-port ui web">
+                    <a href="images/port/airman.png" class="project-item" data-pswp-width="1440" data-pswp-height="5911"
+                        data-cropped="true">
+                        <img src="images/port/airman_small.jpg" alt="" style="object-position: top;" />
+                        <span class="pswp-caption-content">
+                            <p class="m-0">Airman Website UI</p>
+                            <p class="m-0">2022</p>
+                        </span>
+                        <div class="overlay">
+                            <div class="overlay-inner">
+                                <h4>Airman</h4>
+                                <p key="UI_UX_Design">UI / UX Design</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12 single-port ui web">
+                    <a href="images/port/khadem_sanat_landing.jpg" class="project-item" data-pswp-width="1440"
+                        data-pswp-height="4293" data-cropped="true">
+                        <img src="images/port/khadem_sanat_landing_small.jpg" alt="" style="object-position: top;" />
+                        <span class="pswp-caption-content">
+                            <p class="m-0">Khadem Sanat Landing Page UI</p>
+                            <p class="m-0">2022</p>
+                        </span>
+                        <div class="overlay">
+                            <div class="overlay-inner">
+                                <h4>Khadem Sanat</h4>
+                                <p key="UI_UX_Design">UI / UX Design</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12 single-port ui web">
+                    <a href="images/port/srl_web.jpg" class="project-item" data-pswp-width="1920"
+                        data-pswp-height="4484" data-cropped="true">
+                        <img src="images/port/srl_web_small.jpg" alt="portfolio image" style="object-position: top;" />
+                        <span class="pswp-caption-content">
+                            <p class="m-0">Shipping Rail Logistics Website UI</p>
+                            <p class="m-0">2020</p>
+                        </span>
+                        <div class="overlay">
+                            <div class="overlay-inner">
+                                <h4>Shipping Rail Logistics</h4>
+                                <p key="UI_UX_Design">UI / UX Design</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--portfolio area starts-->
+
+    <div class="portfolio-2-area section-padding">
+        <div class="portfolio-content">
+            <div class="port-nav">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <ul class="port-nav-list">
+                                <li class="rounded-pill">
+                                    <a class="img-filter rounded-pill active lang" data-filter="*" key="All">All</a>
+                                </li>
+                                <!-- <li><a class="img-filter lang" data-filter=".web" key="Web_Design">Web Design</a></li> -->
+                                <li class="rounded-pill">
+                                    <a class="img-filter rounded-pill lang" data-filter=".ui" key="UI_Design">UI
+                                        Design</a>
+                                </li>
+                                <li class="rounded-pill">
+                                    <a class="img-filter rounded-pill lang" data-filter=".logo-design"
+                                        key="Logo">Logo</a>
+                                </li>
+                                <li class="rounded-pill">
+                                    <a class="img-filter rounded-pill lang" data-filter=".publication"
+                                        key="Publication">Publication</a>
+                                </li>
+                                <li class="rounded-pill">
+                                    <a class="img-filter rounded-pill lang" data-filter=".social"
+                                        key="Social_Media">Social Media</a>
+                                </li>
+                                <li class="rounded-pill">
+                                    <a class="img-filter rounded-pill lang" data-filter=".paint"
+                                        key="Painting">Painting</a>
+                                </li>
+                                <li class="rounded-pill">
+                                    <a class="img-filter rounded-pill lang" data-filter=".photo"
+                                        key="Photography">Photography</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container pswp-gallery pswp-gallery--single-column" id="my-gallery">
+                <div class="row" id="img-filter">
+                    <div class="col-md-4 col-sm-6 col-xs-12 single-port publication">
+                        <a href="images/port/hayaat_grand_hotel.jpg" class="project-item" data-pswp-width="3000"
+                            data-pswp-height="2000" data-cropped="true">
+                            <img src="images/port/hayaat_grand_hotel_small.jpg" alt=""
+                                style="object-position: center;" />
+                            <span class="pswp-caption-content">
+                                <p class="m-0">Hayaat Grand Hotel Brochure</p>
+                                <p class="m-0">2023</p>
+                            </span>
+                            <div class="overlay">
+                                <div class="overlay-inner">
+                                    <h4>Hayaat Grand Hotel</h4>
+                                    <p key="Mobile_App_Design">Brochure Design</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-12 single-port social">
+                        <a href="images/port/tandis_salamat_instagram_post.jpg" class="project-item"
+                            data-pswp-width="8000" data-pswp-height="4000" data-cropped="true">
+                            <img src="images/port/tandis_salamat_instagram_post_small.jpg" alt=""
+                                style="object-position: center;" />
+                            <span class="pswp-caption-content">
+                                <p class="m-0">Tandis Salamat Instagram Posts</p>
+                                <p class="m-0">2023</p>
+                            </span>
+                            <div class="overlay">
+                                <div class="overlay-inner">
+                                    <h4>Tandis Salamat</h4>
+                                    <p key="UI_UX_Design">Instagram posts</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-12 single-port logo-design">
+                        <a href="images/port/iran_sanat.jpg" class="project-item" data-pswp-width="1080"
+                            data-pswp-height="1080" data-cropped="true">
+                            <img src="images/port/iran_sanat.jpg" alt="portfolio image" style="object-position: top;" />
+                            <span class="pswp-caption-content">
+                                <p class="m-0">Iran Sanat Logo</p>
+                                <p class="m-0">2022</p>
+                            </span>
+                            <div class="overlay">
+                                <div class="overlay-inner">
+                                    <h4>Iran Sanat</h4>
+                                    <p key="Brand_Design">Brand, Design</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-12 single-port logo-design">
+                        <a href="images/port/bamboo.jpg" class="project-item" data-pswp-width="1000"
+                            data-pswp-height="1000" data-cropped="true">
+                            <img src="images/port/bamboo.jpg" alt="" style="object-position: center;" />
+                            <span class="pswp-caption-content">
+                                <p class="m-0">Bamboo Logo</p>
+                                <p class="m-0">2022</p>
+                            </span>
+                            <div class="overlay">
+                                <div class="overlay-inner">
+                                    <h4>Bamboo - Online Flower Shop</h4>
+                                    <p key="Brand_Design">Brand, Design</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-12 single-port logo-design">
+                        <a href="images/port/adineh.jpg" class="project-item" data-pswp-width="1080"
+                            data-pswp-height="1080" data-cropped="true">
+                            <img src="images/port/adineh.jpg" alt="" style="object-position: center;" />
+                            <span class="pswp-caption-content">
+                                <p class="m-0">Adineh Laundry Logo</p>
+                                <p class="m-0">2021</p>
+                            </span>
+                            <div class="overlay">
+                                <div class="overlay-inner">
+                                    <h4>Adineh Laundry</h4>
+                                    <p key="Brand_Design">Brand, Design</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-12 single-port logo-design">
+                        <a href="images/port/helena.jpg" class="project-item" data-pswp-width="1080"
+                            data-pswp-height="1080" data-cropped="true">
+                            <img src="images/port/helena.jpg" alt="" style="object-position: center;" />
+                            <span class="pswp-caption-content">
+                                <p class="m-0">Helena Logo</p>
+                                <p class="m-0">2021</p>
+                            </span>
+                            <div class="overlay">
+                                <div class="overlay-inner">
+                                    <h4>Helena Gallery</h4>
+                                    <p key="Brand_Design">Brand, Design</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-12 single-port logo-design">
+                        <a href="images/port/khadem_rail_group.jpg" class="project-item" data-pswp-width="1600"
+                            data-pswp-height="1600" data-cropped="true">
+                            <img src="images/port/khadem_rail_group.jpg" alt="" style="object-position: center;" />
+                            <span class="pswp-caption-content">
+                                <p class="m-0">Khadem Rail Group Logo</p>
+                                <p class="m-0">2023</p>
+                            </span>
+                            <div class="overlay">
+                                <div class="overlay-inner">
+                                    <h4>Khadem Rail Group</h4>
+                                    <p key="Brand_Design">Brand, Design</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-12 single-port logo-design">
+                        <a href="images/port/khadem_sanat.jpg" class="project-item" data-pswp-width="1080"
+                            data-pswp-height="1080" data-cropped="true">
+                            <img src="images/port/khadem_sanat.jpg" alt="" style="object-position: center;" />
+                            <span class="pswp-caption-content">
+                                <p class="m-0">Khadem Sanat Logo</p>
+                                <p class="m-0">2022</p>
+                            </span>
+                            <div class="overlay">
+                                <div class="overlay-inner">
+                                    <h4>Khadem Sanat</h4>
+                                    <p key="Brand_Design">Brand, Design</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-12 single-port paint">
+                        <a href="images/port/girl.jpg" class="project-item" data-pswp-width="750" data-pswp-height="892"
+                            data-cropped="true">
+                            <img src="images/port/girl.jpg" alt="portfolio image" style="object-position: top;" />
+                            <span class="pswp-caption-content">
+                                <p class="m-0">The Girl Painting</p>
+                                <p class="m-0">2016</p>
+                            </span>
+                            <div class="overlay">
+                                <div class="overlay-inner">
+                                    <h4>The Girl</h4>
+                                    <p key="Painting">Painting</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-12 single-port ui">
+                        <a href="images/port/wakeup.jpg" class="project-item" data-pswp-width="1000"
+                            data-pswp-height="1000" data-cropped="true">
+                            <img src="images/port/wakeup.jpg" alt="" style="object-position: center;" />
+                            <span class="pswp-caption-content">
+                                <p class="m-0">Wake Up App UI</p>
+                                <p class="m-0">2022</p>
+                            </span>
+                            <div class="overlay">
+                                <div class="overlay-inner">
+                                    <h4>Wake Up</h4>
+                                    <p key="Mobile_App_Design">Mobile App Design</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-12 single-port logo-design">
+                        <a href="images/port/srl.jpg" class="project-item" data-pswp-width="1000"
+                            data-pswp-height="1000" data-cropped="true">
+                            <img src="images/port/srl.jpg" alt="portfolio image" style="object-position: top;" />
+                            <span class="pswp-caption-content">
+                                <p class="m-0">Shipping Rail Logistics Logo</p>
+                                <p class="m-0">2020</p>
+                            </span>
+                            <div class="overlay">
+                                <div class="overlay-inner">
+                                    <h4>Shipping Rail Logistics</h4>
+                                    <p key="Brand_Design">Brand, Design</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-12 single-port logo-design">
+                        <a href="images/port/ksc.jpg" class="project-item" data-pswp-width="1000"
+                            data-pswp-height="1000" data-cropped="true">
+                            <img src="images/port/ksc.jpg" alt="portfolio image" style="object-position: center;" />
+                            <span class="pswp-caption-content">
+                                <p class="m-0">Khorasan Steel Complex Logo</p>
+                                <p class="m-0">2020</p>
+                            </span>
+                            <div class="overlay">
+                                <div class="overlay-inner">
+                                    <h4>Khorasan Steel Complex</h4>
+                                    <p key="Brand_Design">Brand, Design</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-12 single-port logo-design">
+                        <a href="images/port/KHB.jpg" class="project-item" data-pswp-width="2448"
+                            data-pswp-height="3264" data-cropped="true">
+                            <img src="images/port/KHB.jpg" alt="portfolio image" style="object-position: top;" />
+                            <span class="pswp-caption-content">
+                                <p class="m-0">Khadem Brokerage Logo</p>
+                                <p class="m-0">2022</p>
+                            </span>
+                            <div class="overlay">
+                                <div class="overlay-inner">
+                                    <h4>Khadem Brokerage</h4>
+                                    <p key="Brand_Design">Brand, Design</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-12 single-port paint">
+                        <a href="images/port/girl_and_eiffel.jpg" class="project-item" data-pswp-width="522"
+                            data-pswp-height="631" data-cropped="true">
+                            <img src="images/port/girl_and_eiffel.jpg" alt="portfolio image"
+                                style="object-position: center;" />
+                            <span class="pswp-caption-content">
+                                <p class="m-0">The Girl and The Eiffel tower</p>
+                                <p class="m-0">2022</p>
+                            </span>
+                            <div class="overlay">
+                                <div class="overlay-inner">
+                                    <h4>The Girl and The Eiffel tower</h4>
+                                    <p key="Painting">Painting</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-12 single-port paint">
+                        <a href="images/port/edlo_kawa.jpg" class="project-item" data-pswp-width="1494"
+                            data-pswp-height="1000" data-cropped="true">
+                            <img src="images/port/eldo_kawa_small.jpg" alt="" style="object-position: center;" />
+                            <span class="pswp-caption-content">
+                                <p class="m-0">Eldo Kawa Painting</p>
+                                <p class="m-0">2020</p>
+                            </span>
+                            <div class="overlay">
+                                <div class="overlay-inner">
+                                    <h4>Eldo Kawa</h4>
+                                    <p key="Painting">Painting</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-12 single-port photo">
+                        <a href="images/port/fresh_feeling.jpg" class="project-item" data-pswp-width="2448"
+                            data-pswp-height="3264" data-cropped="true">
+                            <img src="images/port/fresh_feeling_small.jpg" alt="portfolio image"
+                                style="object-position: bottom;" />
+                            <span class="pswp-caption-content">
+                                <p class="m-0">Fresh Feeling</p>
+                                <p class="m-0">2020</p>
+                            </span>
+                            <div class="overlay">
+                                <div class="overlay-inner">
+                                    <h4>Fresh Feeling</h4>
+                                    <p key="Photography">Photography</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-12 single-port photo">
+                        <a href="images/port/khayyam.jpg" class="project-item" data-pswp-width="2448"
+                            data-pswp-height="3264" data-cropped="true">
+                            <img src="images/port/khayyam_small.jpg" alt="portfolio image"
+                                style="object-position: center;" />
+                            <span class="pswp-caption-content">
+                                <p class="m-0">Khayyam</p>
+                                <p class="m-0">2019</p>
+                            </span>
+                            <div class="overlay">
+                                <div class="overlay-inner">
+                                    <h4>Khayyam</h4>
+                                    <p key="Photography">Photography</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-12 single-port logo-design">
+                        <a href="images/port/naser_khosro.jpg" class="project-item" data-pswp-width="1000"
+                            data-pswp-height="1000" data-cropped="true">
+                            <img src="images/port/naser_khosro.jpg" alt="portfolio image"
+                                style="object-position: center;" />
+                            <span class="pswp-caption-content">
+                                <p class="m-0">Naser Khosro LogoType</p>
+                                <p class="m-0">2019</p>
+                            </span>
+                            <div class="overlay">
+                                <div class="overlay-inner">
+                                    <h4>Naser Khosro</h4>
+                                    <p key="Brand_Design">Brand, Design</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-12 single-port paint">
+                        <a href="images/port/moon.jpg" class="project-item" data-pswp-width="750"
+                            data-pswp-height="1060" data-cropped="true">
+                            <img src="images/port/moon.jpg" alt="portfolio image" style="object-position: center;" />
+                            <span class="pswp-caption-content">
+                                <p class="m-0">Love Moon Painting</p>
+                                <p class="m-0">2019</p>
+                            </span>
+                            <div class="overlay">
+                                <div class="overlay-inner">
+                                    <h4>Love Moon</h4>
+                                    <p key="Painting">Painting</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-12 single-port photo">
+                        <a href="images/port/sunset.jpg" class="project-item" data-pswp-width="2448"
+                            data-pswp-height="3264" data-cropped="true">
+                            <img src="images/port/sunset_small.jpg" alt="portfolio image"
+                                style="object-position: center;" />
+                            <span class="pswp-caption-content">
+                                <p class="m-0">Sunset</p>
+                                <p class="m-0">2019</p>
+                            </span>
+                            <div class="overlay">
+                                <div class="overlay-inner">
+                                    <h4>Sunset</h4>
+                                    <p key="Photography">Photography</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-12 single-port paint">
+                        <a href="images/port/tree.jpg" class="project-item" data-pswp-width="1077"
+                            data-pswp-height="750" data-cropped="true">
+                            <img src="images/port/tree.jpg" alt="portfolio image" style="object-position: center;" />
+                            <span class="pswp-caption-content">
+                                <p class="m-0">Royal Tree Painting</p>
+                                <p class="m-0">2019</p>
+                            </span>
+                            <div class="overlay">
+                                <div class="overlay-inner">
+                                    <h4>Royal Tree</h4>
+                                    <p key="Painting">Painting</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-12 single-port paint">
+                        <a href="images/port/birds.jpg" class="project-item" data-pswp-width="750"
+                            data-pswp-height="954" data-cropped="true">
+                            <img src="images/port/birds.jpg" alt="portfolio image" style="object-position: center;" />
+                            <span class="pswp-caption-content">
+                                <p class="m-0">Birds Painting</p>
+                                <p class="m-0">2019</p>
+                            </span>
+                            <div class="overlay">
+                                <div class="overlay-inner">
+                                    <h4>Birds</h4>
+                                    <p key="Painting">Painting</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--portfolio area ends-->
 
     <!--Brand logo area starts-->
 
@@ -530,6 +1225,61 @@
     <!-- load language files -->
     <script src="js/languages/lang.en.js"></script>
     <script src="js/languages/lang.fa.js"></script>
+
+    <script type="module">
+        // counter-up js
+        const counterUp = window.counterUp.default;
+
+        const callback = entries => {
+            entries.forEach(entry => {
+                const el = entry.target
+                if (entry.isIntersecting && !el.classList.contains('is-visible')) {
+                    for (const counter of counters) {
+                        counterUp(counter, {
+                            duration: 1000,
+                            delay: 16,
+                        });
+                        el.classList.add('is-visible');
+                    }
+                }
+            })
+        }
+
+        // observer
+        const IO = new IntersectionObserver(callback, { threshold: 1 });
+
+        // First element to target
+        const el = document.querySelector('.counter');
+
+        // all numbers
+        const counters = document.querySelectorAll('.counter');
+        IO.observe(el);
+
+        // photoswipe
+        import PhotoSwipeLightbox from './js/photoswipe-lightbox.esm.js';
+        import ObjectPosition from '/js/photoswipe-object-position.js';
+        import PhotoSwipeDynamicCaption from 'https://unpkg.com/photoswipe-dynamic-caption-plugin/photoswipe-dynamic-caption-plugin.esm.js';
+
+        const lightbox = new PhotoSwipeLightbox({
+            gallery: '#my-gallery',
+            children: 'a',
+            imageClickAction: 'zoom',
+            secondaryZoomLevel: 'fill',
+            tapAction: 'close',
+            pswpModule: () => import('./js/photoswipe.esm.js'),
+            paddingFn: (viewportSize) => {
+                return {
+                    top: 30, bottom: 30, left: 30, right: 30
+                }
+            },
+        });
+        new ObjectPosition(lightbox);
+        const captionPlugin = new PhotoSwipeDynamicCaption(lightbox, {
+            // Plugins options, for example:
+            type: 'auto',
+        });
+        lightbox.init();
+    </script>
 
 </body>
 

@@ -1142,46 +1142,34 @@ ul.port-nav-list li a.active {
 
 .skills {
     display: inline-block;
-    width: 75px;
-    height: 75px;
-    border-radius: 8px;
+    width: 64px;
+    height: 64px;
     position: absolute;
-    box-shadow: 24px 0 72px rgba(54, 32, 152, .3)
+    box-shadow: 24px 0 72px rgba(54, 32, 152, .3);
 }
 
 .skills.illustrator {
-    background-color: #390000;
-    top: 20px;
-    left: -30px
+    top: 80px;
+    right: 0px;
 }
 
 .skills.photoshop {
-    background-color: #001631;
-    right: 70px;
-    top: 80px
+    left: 50px;
+    top: 20px;
 }
 
-.skills.figma {
-    background-color: #fff;
-    bottom: 60px;
-    left: 140px
+.skills.xd {
+    bottom: 0;
+    right: 120px;
 }
 
-.skills .svg {
+.skills img {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 40px;
-    height: 40px
-}
-
-.skills.illustrator .svg {
-    color: #ff9a00
-}
-
-.skills.photoshop .svg {
-    color: #00a9ff
+    width: 64px;
+    height: 64px;
 }
 
 .desc {

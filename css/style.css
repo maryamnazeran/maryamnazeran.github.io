@@ -805,7 +805,6 @@ canvas {
 .project-item {
     margin-bottom: 24px;
     overflow: hidden;
-    /* box-sizing: border-box; */
     position: relative;
     width: 100%;
     display: block;
@@ -814,7 +813,6 @@ canvas {
 .project-item img {
     width: 100%;
     object-fit: cover !important;
-    /* height: 256px !important; */
     /* filter: grayscale(100%); */
     border-radius: 17px;
 }
@@ -858,7 +856,7 @@ canvas {
     transform: translateY(-30px);
     text-transform: uppercase;
     font-size: 25px;
-    letter-spacing: 1px;
+    /* letter-spacing: 1px; */
 }
 
 .overlay .overlay-inner p {
@@ -1034,7 +1032,7 @@ ul.port-nav-list li a.active {
 
 /*------------- Contact area ends -------------*/
 
-/*------------ 14. Brand carousel area strats ------- */
+/*------------ 14. Brand carousel area starts ------- */
 
 #brand-carousel .item {
     margin: 0 15px;
@@ -1051,6 +1049,7 @@ ul.port-nav-list li a.active {
     width: 100%;
     border: 1px solid #333333;
     padding: 30px;
+    border-radius: 17px;
 }
 
 .brand-area .owl-theme .owl-dots .owl-dot span {
@@ -1145,7 +1144,6 @@ ul.port-nav-list li a.active {
     width: 64px;
     height: 64px;
     position: absolute;
-    box-shadow: 24px 0 72px rgba(54, 32, 152, .3);
 }
 
 .skills.illustrator {

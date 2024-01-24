@@ -9,7 +9,7 @@
 
     .section-title h2 {
         font-size: 35px;
-        letter-spacing: 5px;
+        /* letter-spacing: 5px; */
     }
 
     .nav>li>a {
@@ -125,7 +125,7 @@
 
     .section-title h2 {
         font-size: 30px;
-        letter-spacing: 2px;
+        /* letter-spacing: 2px; */
     }
 
     ul.port-nav-list li {
